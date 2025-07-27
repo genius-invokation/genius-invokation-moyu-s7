@@ -15,7 +15,6 @@
 
 import { createResource, For, Match, Show, Switch } from "solid-js";
 import { UserInfo as UserInfoT } from "../auth";
-import { getAvatarUrl } from "../utils";
 import { A } from "@solidjs/router";
 import axios, { AxiosError } from "axios";
 import { GameInfo } from "./GameInfo";
@@ -23,7 +22,7 @@ import { GameInfo } from "./GameInfo";
 export interface UserInfoProps extends UserInfoT {}
 
 export function UserInfo(props: UserInfoProps) {
-  const avatarUrl = () => getAvatarUrl(props.id);
+  const avatarUrl = () => props.avatarUrl;
 
   const [games] = createResource(() =>
     axios.get<{ data: any[] }>(`games/mine`).then((res) => res.data),
@@ -36,6 +35,13 @@ export function UserInfo(props: UserInfoProps) {
             <img src={avatarUrl()} class="w-36 h-36 [clip-path:circle()]" />
           </Show>
         </div>
+        <span class="text-gray">
+          您可以在{" "}
+          <a href="https://www.gravatar.com" target="_blank" rel="noopener" class="text-blue-400">
+            gravatar.com
+          </a>{" "}
+          根据您的邮箱来设置头像。
+        </span>
       </div>
       <div class="flex-grow flex flex-col items-start">
         <div class="flex items-end gap-2 mb-5">

@@ -14,13 +14,17 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import {
+  Body,
   Controller,
   Get,
+  Headers,
   NotFoundException,
   Param,
   ParseIntPipe,
+  Post,
+  UnauthorizedException,
 } from "@nestjs/common";
-import { UsersService, type UserInfo } from "./users.service";
+import { CreateUserDto, UsersService, type UserInfo } from "./users.service";
 import { User } from "../auth/user.decorator";
 import { Public } from "../auth/auth.guard";
 
@@ -48,5 +52,18 @@ export class UsersController {
       throw new NotFoundException();
     }
     return user;
+  }
+
+  @Post()
+  @Public()
+  async createUser(
+    @Headers("Authorization") auth: string,
+    @Body() body: CreateUserDto,
+  ): Promise<UserInfo> {
+    if (auth !== `Bearer ${import.meta.env.ADMIN_PASSWORD}`) {
+      throw new UnauthorizedException("No permission to create user");
+    }
+    await this.users.createUser(body);
+    return (await this.users.findById(body.id))!;
   }
 }

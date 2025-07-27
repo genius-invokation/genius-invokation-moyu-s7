@@ -32,55 +32,13 @@ export class AuthService {
   ) {}
   private logger = new Logger(AuthService.name);
 
-  private async getGitHubId(code: string) {
-    const response = await axios.post(
-      CODE_EXCHANGE_URL,
-      {
-        client_id: process.env.GH_CLIENT_ID,
-        client_secret: process.env.GH_CLIENT_SECRET,
-        code,
-      },
-      {
-        headers: {
-          Accept: "application/json",
-        },
-        validateStatus: () => true, // don't throw
-      },
-    );
-    if (response.status >= 400 || !response.data?.access_token) {
-      this.logger.error("Code exchange failure");
-      this.logger.error(code);
-      this.logger.error(response.data);
-      throw new UnauthorizedException(
-        `code exchange failure: ${response.data?.error_description}`,
-      );
-    }
-    const accessToken = response.data.access_token;
-    const userResponse = await axios.get(GET_USER_API_URL, {
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-        Accept: `application/vnd.github+json`,
-        "X-GitHub-Api-Version": "2022-11-28",
-      },
-      validateStatus: () => true, // don't throw
-    });
-    if (userResponse.status >= 400) {
-      this.logger.error("Get User detail failure");
-      this.logger.error(userResponse.data);
-      throw new UnauthorizedException(
-        `get user detail failure: ${userResponse.data?.message}`,
-      );
-    }
-    return {
-      id: userResponse.data.id,
-      ghToken: accessToken,
-    };
-  }
 
-  async login(code: string) {
-    const { id, ghToken } = await this.getGitHubId(code);
-    await this.users.create(id, ghToken);
-    const payload = { user: 1, sub: id };
+  async login(email: string, password: string) {
+    const user = await this.users.findByEmailAndVerify(email, password);
+    if (!user) {
+      throw new UnauthorizedException("Invalid email or password");
+    }
+    const payload = { user: 1, sub: user.id };
     return {
       accessToken: await this.jwtService.signAsync(payload),
     };

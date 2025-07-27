@@ -16,11 +16,12 @@
 import { createSignal } from "solid-js";
 import { GITHUB_AUTH_REDIRECT_URL } from "../config";
 import { useAuth } from "../auth";
+import axios, { AxiosError } from "axios";
 
 export function Login() {
   const CLIENT_ID = "Iv23liMGX6EkkrfUax8B";
   const REDIRECT_URL = encodeURIComponent(GITHUB_AUTH_REDIRECT_URL);
-  const { loginGuest } = useAuth();
+  const { loginGuest, refresh } = useAuth();
 
   const showGuestHint = () => {
     window.alert(`在游客模式下：
@@ -30,19 +31,31 @@ export function Login() {
 如果您希望将对局中的 bug 反馈给开发者，那么强烈建议您使用 GitHub 登录以便我们在数据库中查询对局记录。`);
   };
 
+  const [loginFormValid, setLoginFormValid] = createSignal(false);
   const [guestNameValid, setGuestNameValid] = createSignal(false);
 
-  const githubLogin = () => {
-    const popup = window.open(
-      `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URL}`,
-      'githubOAuth',
-      'popup,width=600,height=700'
-    );
-    if (!popup) {
-      window.alert("Please allow popup window to login with GitHub.");
-      return;
+  const login = async (e: SubmitEvent) => {
+    e.preventDefault();
+    const formEl = e.target as HTMLFormElement;
+    const form = new FormData(formEl);
+    const payload = {
+      email: form.get("email"),
+      password: form.get("password")
+    };
+    try {
+      const { data } = await axios.post("/auth/login", payload);
+      localStorage.setItem("accessToken", data.accessToken);
+      await refresh();
+    } catch (e) {
+      if (e instanceof AxiosError) {
+          alert(e.response?.data.message);
+      }
+      console.error(e);
     }
-    window.githubOAuthPopup = popup;
+  };
+  const validateLoginForm = (e: InputEvent) => {
+    const formEl = e.target as HTMLFormElement;
+    setLoginFormValid(formEl.checkValidity());
   };
 
   const guestLogin = async (e: SubmitEvent) => {
@@ -54,13 +67,31 @@ export function Login() {
 
   return (
     <div class="w-80 flex flex-col items-stretch text-xl my-8 gap-10">
-      <button
-        class="flex flex-row gap-2 btn btn-solid-black h-2.8em"
-        onClick={githubLogin}
-      >
-        <i class="block i-mdi-github" />
-        <span>推荐使用 GitHub 登录</span>
-      </button>
+      <form class="flex flex-col" onSubmit={login} onInput={validateLoginForm}>
+        <input
+          type="text"
+          class="input input-solid text-1rem rounded-lb-0 rounded-rb-0"
+          name="email"
+          placeholder="邮箱"
+          inputmode="email"
+          required
+        />
+        <input
+          type="password"
+          class="input input-solid text-1rem rounded-lt-0 rounded-rt-0"
+          name="password"
+          placeholder="密码"
+          inputmode="text"
+          required
+        />
+        <button
+          type="submit"
+          class="flex-shrink-0 mt-3 btn btn-solid-green "
+          disabled={!loginFormValid()}
+        >
+          选手登录
+        </button>
+      </form>
       <hr />
       <div class="flex flex-col gap-1">
         <p class="text-gray-500 text-sm">

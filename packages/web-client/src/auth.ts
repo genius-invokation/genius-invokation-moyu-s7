@@ -22,6 +22,7 @@ export interface UserInfo {
   id: number;
   login: string;
   name?: string;
+  avatarUrl: string;
 }
 
 const NOT_LOGIN = {

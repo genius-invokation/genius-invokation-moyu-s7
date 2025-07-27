@@ -16,10 +16,9 @@
 import { A, useNavigate } from "@solidjs/router";
 import { Show } from "solid-js";
 import { IS_BETA } from "@gi-tcg/config";
-import { getAvatarUrl } from "../utils";
 import Logo from "./Logo.svg";
 import Title from "./Title.svg";
-import { useAuth } from "../auth";
+import { useAuth, UserInfo } from "../auth";
 
 const USE_LOGO = true;
 
@@ -50,7 +49,7 @@ export function Header() {
           <A href={`/user/${status().id}`}>
             <div class="rounded-full w-12 h-12 b-solid b-1 b-gray-200 flex items-center justify-center">
               <img
-                src={getAvatarUrl(status().id as number)}
+                src={(status() as UserInfo).avatarUrl}
                 class="w-10 h-10 [clip-path:circle()]"
               />
             </div>

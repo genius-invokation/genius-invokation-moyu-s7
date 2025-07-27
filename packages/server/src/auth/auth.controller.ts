@@ -21,43 +21,27 @@ import {
   HttpStatus,
   Post,
   Query,
-  Req,
-  Res,
 } from "@nestjs/common";
 import type { FastifyReply, FastifyRequest } from "fastify";
 import { IsNotEmpty } from "class-validator";
 import { AuthService } from "./auth.service";
 import { Public } from "./auth.guard";
-import { SERVER_HOST } from "@gi-tcg/config";
 
-class GitHubCallbackDto {
+class LoginRequestDto {
   @IsNotEmpty()
-  code!: string;
+  email!: string;
+
+  @IsNotEmpty()
+  password!: string;
 }
 
 @Controller("auth")
 export class AuthController {
   constructor(private auth: AuthService) {}
 
+  @Post("login")
   @Public()
-  @HttpCode(HttpStatus.OK)
-  @Get("github/callback")
-  async login(
-    @Query() { code }: GitHubCallbackDto,
-    @Res() res: FastifyReply,
-  ) {
-    const { accessToken } = await this.auth.login(code);
-    res.type("text/html").send(
-      `<!DOCTYPE html>
-<title>Login Success</title>
-<p>Redirecting back...</p>
-<script>
-  window.addEventListener("error", (event) => {
-    document.body.innerHTML += \`\${event.type}: \${event.message}\\n\`;
-  });
-  window.opener.postMessage({ type: "login", token: "${accessToken}" }, "*");
-  window.close();
-</script>`,
-    );
+  login(@Body() body: LoginRequestDto) {
+    return this.auth.login(body.email, body.password);
   }
 }

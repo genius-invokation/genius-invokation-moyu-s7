@@ -100,6 +100,7 @@ type PlayerInfo = (
 ) & {
   name: string;
   deck: Deck;
+  avatarUrl?: string;
 };
 
 export type PlayerId = PlayerInfo["id"];
@@ -634,6 +635,7 @@ export class RoomsService {
       isGuest: false,
       id: userId,
       name: user.name ?? user.login,
+      avatarUrl: user.avatarUrl,
       deck,
     };
     const room = await this.createRoom(playerInfo, params);
@@ -770,6 +772,7 @@ export class RoomsService {
       isGuest: false,
       id: userId,
       name: user.name ?? user.login,
+      avatarUrl: user.avatarUrl,
       deck,
     };
     return this.joinRoom(playerInfo, roomId);
