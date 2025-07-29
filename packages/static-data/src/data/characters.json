@@ -67,7 +67,7 @@
         "name": "霜华矢",
         "englishName": "Frostflake Arrow",
         "type": "GCG_SKILL_TAG_A",
-        "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，对所有敌方后台角色造成2点$[K5]。",
+        "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，对所有敌方后台角色造成<color=#FFFFFFFF>2点$[K5]</color>。",
         "description": "造成2点冰元素伤害，对所有敌方后台角色造成2点穿透伤害。",
         "playCost": [
           {
@@ -81,15 +81,15 @@
           "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
           "D__KEY__DAMAGE": 2
         },
-        "icon": "Skill_S_Ganyu_02",
-        "iconHash": "6480676865296185853"
+        "icon": "Skill_A_02",
+        "iconHash": "2636861745786031653"
       },
       {
         "id": 11014,
         "name": "降众天华",
         "englishName": "Celestial Shower",
         "type": "GCG_SKILL_TAG_Q",
-        "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，对所有敌方后台角色造成1点$[K5]，召唤<color=#FFFFFFFF>$[C111011]</color>。",
+        "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，对所有敌方后台角色造成<color=#FFFFFFFF>1点$[K5]</color>，召唤<color=#FFFFFFFF>$[C111011]</color>。",
         "description": "造成2点冰元素伤害，对所有敌方后台角色造成1点穿透伤害，召唤冰灵珠。",
         "playCost": [
           {
@@ -98,7 +98,7 @@
           },
           {
             "type": "GCG_COST_ENERGY",
-            "count": 3
+            "count": 2
           }
         ],
         "targetList": [],
@@ -112,7 +112,7 @@
       }
     ],
     "hp": 12,
-    "maxEnergy": 3,
+    "maxEnergy": 2,
     "cardFace": "UI_Gcg_CardFace_Char_Avatar_Ganyu",
     "icon": "UI_Gcg_Char_AvatarIcon_Ganyu"
   },
@@ -500,6 +500,7 @@
         "playCost": [],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Ayaka_02",
         "iconHash": "16565744091224246055"
       }
@@ -755,6 +756,7 @@
         ],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Qiqi_01",
         "iconHash": "6148151924580648348"
       },
@@ -1077,7 +1079,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": true
+        "hidden": true,
+        "keyMap": {}
       },
       {
         "id": 11115,
@@ -1088,7 +1091,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": true
+        "hidden": true,
+        "keyMap": {}
       },
       {
         "id": 11116,
@@ -1100,6 +1104,7 @@
         "playCost": [],
         "targetList": [],
         "hidden": true,
+        "keyMap": {},
         "icon": "Skill_E_Wriothesley_01_HD",
         "iconHash": "1338630693223503108"
       }
@@ -1252,8 +1257,8 @@
         "name": "噬罪的告解",
         "englishName": "Ravaging Confession",
         "type": "GCG_SKILL_TAG_E",
-        "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成1层<color=#FFFFFFFF>$[C111131]</color>。（触发$[C111131]的效果时，会生成<color=#FFFFFFFF>$[C111133]</color>。）",
-        "description": "造成1点冰元素伤害，生成1层洞察破绽。（触发洞察破绽的效果时，会生成强攻破绽。）",
+        "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成2层<color=#FFFFFFFF>$[C111131]</color>。（触发$[C111131]的效果时，会生成<color=#FFFFFFFF>$[C111133]</color>。）",
+        "description": "造成1点冰元素伤害，生成2层洞察破绽。（触发洞察破绽的效果时，会生成强攻破绽。）",
         "playCost": [
           {
             "type": "GCG_COST_DICE_CRYO",
@@ -1834,6 +1839,7 @@
         "playCost": [],
         "targetList": [],
         "hidden": true,
+        "keyMap": {},
         "icon": "Skill_S_Tartaglia_02",
         "iconHash": "6940921795195491126"
       }
@@ -2088,6 +2094,7 @@
         ],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Candace_01",
         "iconHash": "10816412002654072337"
       },
@@ -2528,6 +2535,7 @@
         ],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Furina_01",
         "iconHash": "7602905369558835082"
       },
@@ -2581,6 +2589,7 @@
         "playCost": [],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Furina_03",
         "iconHash": "7720131026093354059"
       }
@@ -2592,6 +2601,7 @@
   },
   {
     "id": 1212,
+    "sinceVersion": "v4.7.0",
     "obtainable": false,
     "name": "芙宁娜",
     "englishName": "Furina",
@@ -2643,6 +2653,7 @@
         ],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Furina_02",
         "iconHash": "8862547111379454070"
       },
@@ -2696,6 +2707,7 @@
         "playCost": [],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Furina_03",
         "iconHash": "7720131026093354059"
       }
@@ -2771,6 +2783,7 @@
           }
         ],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Sigewinne_01",
         "iconHash": "3421278481920319996"
       },
@@ -2810,6 +2823,7 @@
         "playCost": [],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Sigewinne_02",
         "iconHash": "4056721756811131458"
       },
@@ -2840,6 +2854,7 @@
         "playCost": [],
         "targetList": [],
         "hidden": true,
+        "keyMap": {},
         "icon": "Skill_E_Sigewinne_01",
         "iconHash": "5392205027049196892"
       },
@@ -3305,6 +3320,7 @@
         ],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Ambor_01",
         "iconHash": "7471511897735271863"
       },
@@ -3396,6 +3412,7 @@
         ],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Yoimiya_01",
         "iconHash": "3619193121665378259"
       },
@@ -3413,7 +3430,7 @@
           },
           {
             "type": "GCG_COST_ENERGY",
-            "count": 3
+            "count": 2
           }
         ],
         "targetList": [],
@@ -3427,7 +3444,7 @@
       }
     ],
     "hp": 10,
-    "maxEnergy": 3,
+    "maxEnergy": 2,
     "cardFace": "UI_Gcg_CardFace_Char_Avatar_Yoimiya",
     "icon": "UI_Gcg_Char_AvatarIcon_Yoimiya"
   },
@@ -3582,6 +3599,7 @@
         ],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Hutao_01",
         "iconHash": "7566030842315271809"
       },
@@ -4376,6 +4394,7 @@
         "playCost": [],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Arlecchino_02",
         "iconHash": "6381033373994177097"
       },
@@ -4403,6 +4422,7 @@
         "playCost": [],
         "targetList": [],
         "hidden": true,
+        "keyMap": {},
         "icon": "Skill_S_Arlecchino_02",
         "iconHash": "6381033373994177097"
       }
@@ -4458,12 +4478,12 @@
         "name": "称名之刻",
         "englishName": "The Named Moment",
         "type": "GCG_SKILL_TAG_E",
-        "rawDescription": "自身进入<color=#FFFFFFFF>$[C113151]</color>，获得2点<color=#FFFFFFFF>「夜魂值」</color>，并从3张<color=#FFFFFFFF>驰轮车</color>中$[K59]1张加入手牌。",
-        "description": "自身进入夜魂加持，获得2点「夜魂值」，并从3张驰轮车中挑选1张加入手牌。",
+        "rawDescription": "本角色进入<color=#FFFFFFFF>$[C113151]</color>，获得2点<color=#FFFFFFFF>「夜魂值」</color>，并从3张<color=#FFFFFFFF>驰轮车</color>中$[K59]1张加入手牌。",
+        "description": "本角色进入夜魂加持，获得2点「夜魂值」，并从3张驰轮车中挑选1张加入手牌。",
         "playCost": [
           {
             "type": "GCG_COST_DICE_PYRO",
-            "count": 3
+            "count": 2
           }
         ],
         "targetList": [
@@ -4530,6 +4550,7 @@
         "playCost": [],
         "targetList": [],
         "hidden": true,
+        "keyMap": {},
         "icon": "Skill_S_Mavuika_02",
         "iconHash": "4561666289799168597"
       }
@@ -5196,6 +5217,7 @@
         ],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Shougun_01",
         "iconHash": "16853262664677415749"
       },
@@ -6310,6 +6332,7 @@
         "playCost": [],
         "targetList": [],
         "hidden": true,
+        "keyMap": {},
         "icon": "Skill_S_Kazuha_01",
         "iconHash": "7890846414289916675"
       }
@@ -6764,7 +6787,7 @@
         "englishName": "White Clouds at Dawn",
         "type": "GCG_SKILL_TAG_E",
         "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C115101]</color>，本角色附属<color=#FFFFFFFF>$[C115104]</color>。",
-        "description": "造成1点风元素伤害，生成步天梯，本角色附属闲云冲击波。",
+        "description": "造成2点风元素伤害，生成步天梯，本角色附属闲云冲击波。",
         "playCost": [
           {
             "type": "GCG_COST_DICE_ANEMO",
@@ -6775,7 +6798,7 @@
         "hidden": false,
         "keyMap": {
           "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
-          "D__KEY__DAMAGE": 1
+          "D__KEY__DAMAGE": 2
         },
         "icon": "Skill_S_Liuyun_01",
         "iconHash": "9971337504846734928"
@@ -6911,6 +6934,7 @@
         "playCost": [],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Chasca_06",
         "iconHash": "8258920847504292279"
       }
@@ -7111,6 +7135,7 @@
         "playCost": [],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Heizo_02",
         "iconHash": "11282233737840629164"
       },
@@ -7501,6 +7526,7 @@
         ],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Albedo_01",
         "iconHash": "15433122184758706126"
       },
@@ -7605,7 +7631,7 @@
         "englishName": "Royal Descent: Behold, Itto the Evil!",
         "type": "GCG_SKILL_TAG_Q",
         "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C116053]</color>。",
-        "description": "造成4点岩元素伤害，本角色附属怒目鬼王。",
+        "description": "造成5点岩元素伤害，本角色附属怒目鬼王。",
         "playCost": [
           {
             "type": "GCG_COST_DICE_GEO",
@@ -7620,7 +7646,7 @@
         "hidden": false,
         "keyMap": {
           "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
-          "D__KEY__DAMAGE": 4
+          "D__KEY__DAMAGE": 5
         },
         "icon": "Skill_E_Itto_01_HD",
         "iconHash": "17637674048314042055"
@@ -7795,7 +7821,7 @@
         "englishName": "Cliffbreaker's Banner",
         "type": "GCG_SKILL_TAG_Q",
         "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成3层<color=#FFFFFFFF>$[C116073]</color>。",
-        "description": "造成3点岩元素伤害，生成3层飞云旗阵。",
+        "description": "造成2点岩元素伤害，生成3层飞云旗阵。",
         "playCost": [
           {
             "type": "GCG_COST_DICE_GEO",
@@ -7810,7 +7836,7 @@
         "hidden": false,
         "keyMap": {
           "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
-          "D__KEY__DAMAGE": 3
+          "D__KEY__DAMAGE": 2
         },
         "icon": "Skill_E_Yunjin_01_HD",
         "iconHash": "16519821316432285869"
@@ -8008,7 +8034,7 @@
         "name": "羽袖一触",
         "englishName": "Fluttering Hasode",
         "type": "GCG_SKILL_TAG_E",
-        "rawDescription": "从3个<color=#FFFFFFFF>$[C116097]</color>中<color=#FFFFFFFF>$[K59]</color>1个召唤。",
+        "rawDescription": "从3个<color=#FFFFFFFF>$[C116097]</color>中挑选1个召唤。",
         "description": "从3个千织的自动制御人形中挑选1个召唤。",
         "playCost": [
           {
@@ -8102,8 +8128,8 @@
         "name": "出击，冲天转转！",
         "englishName": "Go, Go Turbo Twirly!",
         "type": "GCG_SKILL_TAG_E",
-        "rawDescription": "自身附属<color=#FFFFFFFF>$[C116102]</color>，然后进入<color=#FFFFFFFF>$[C116104]</color>，并获得2点<color=#FFFFFFFF>「夜魂值」</color>。（角色进入<color=#FFFFFFFF>$[C116104]</color>后不可使用此技能）\\n（附属<color=#FFFFFFFF>$[C116102]</color>的角色可以使用特技：<color=#FFFFFFFF>$[S1161021]</color>）",
-        "description": "自身附属冲天转转，然后进入夜魂加持，并获得2点「夜魂值」。（角色进入夜魂加持后不可使用此技能）\n（附属冲天转转的角色可以使用特技：转转冲击）",
+        "rawDescription": "自身附属<color=#FFFFFFFF>$[C116102]</color>，然后进入<color=#FFFFFFFF>$[C116104]</color>，并获得2点<color=#FFFFFFFF>「夜魂值」</color>。（角色进入<color=#FFFFFFFF>$[C116104]</color>后不可使用此技能）",
+        "description": "自身附属冲天转转，然后进入夜魂加持，并获得2点「夜魂值」。（角色进入夜魂加持后不可使用此技能）",
         "playCost": [
           {
             "type": "GCG_COST_DICE_GEO",
@@ -8121,6 +8147,9 @@
           }
         ],
         "hidden": false,
+        "keyMap": {
+          "D__KEY__ELEMENT": "GCG_ELEMENT_GEO"
+        },
         "icon": "Skill_S_Kachina_01",
         "iconHash": "12768779412878521271"
       },
@@ -8637,6 +8666,7 @@
         ],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Yaoyao_01",
         "iconHash": "3075437415952126295"
       },
@@ -8754,6 +8784,7 @@
         ],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_E_Baizhuer_01_HD",
         "iconHash": "10471598644398829471"
       }
@@ -8914,6 +8945,7 @@
         ],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "Skill_S_Momoka_01",
         "iconHash": "14225654896761842964"
       },
@@ -9091,7 +9123,7 @@
         "englishName": "Canopy Hunter: Riding High",
         "type": "GCG_SKILL_TAG_E",
         "rawDescription": "选一个我方角色，自身附属<color=#FFFFFFFF>$[C117091]</color>并进入<color=#FFFFFFFF>$[C117092]</color>。造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，然后与所选角色交换位置。",
-        "description": "选一个我方角色，自身附属钩索链接并进入夜魂加持。造成1点草元素伤害，然后与所选角色交换位置。",
+        "description": "选一个我方角色，自身附属钩索链接并进入夜魂加持。造成2点草元素伤害，然后与所选角色交换位置。",
         "playCost": [
           {
             "type": "GCG_COST_DICE_DENDRO",
@@ -9111,7 +9143,7 @@
         "hidden": false,
         "keyMap": {
           "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
-          "D__KEY__DAMAGE": 1
+          "D__KEY__DAMAGE": 2
         },
         "icon": "Skill_S_Kinich_01",
         "iconHash": "7941513928894395153"
@@ -9121,8 +9153,8 @@
         "name": "向伟大圣龙致意",
         "englishName": "Hail to the Almighty Dragonlord",
         "type": "GCG_SKILL_TAG_Q",
-        "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C117093]</color>。",
-        "description": "造成1点草元素伤害，召唤伟大圣龙阿乔。",
+        "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C117093]</color>。",
+        "description": "造成1点草元素伤害，生成伟大圣龙阿乔。",
         "playCost": [
           {
             "type": "GCG_COST_DICE_DENDRO",
@@ -9151,7 +9183,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": true
+        "hidden": true,
+        "keyMap": {}
       }
     ],
     "hp": 10,
@@ -9225,7 +9258,9 @@
           }
         ],
         "hidden": false,
-        "keyMap": {},
+        "keyMap": {
+          "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO"
+        },
         "icon": "Skill_S_Emilie_01",
         "iconHash": "9886359858860542624"
       },
@@ -9279,6 +9314,7 @@
         "playCost": [],
         "targetList": [],
         "hidden": true,
+        "keyMap": {},
         "icon": "Skill_S_Emilie_02",
         "iconHash": "15927452085008245232"
       }
@@ -9496,6 +9532,7 @@
         "playCost": [],
         "targetList": [],
         "hidden": true,
+        "keyMap": {},
         "icon": "MonsterSkill_S_LaSignora_02",
         "iconHash": "2122289062561771071"
       }
@@ -9769,8 +9806,8 @@
         "name": "纯水幻造",
         "englishName": "Oceanid Mimic Summoning",
         "type": "GCG_SKILL_TAG_E",
-        "rawDescription": "随机召唤1种<color=#FFFFFFFF>$[C122010]</color>。（优先生成不同的类型，召唤区最多同时存在2种$[C122010]。）",
-        "description": "随机召唤1种纯水幻形。（优先生成不同的类型，召唤区最多同时存在2种纯水幻形。）",
+        "rawDescription": "随机召唤1种<color=#FFFFFFFF>$[C122010]</color>。（优先生成不同的类型）",
+        "description": "随机召唤1种纯水幻形。（优先生成不同的类型）",
         "playCost": [
           {
             "type": "GCG_COST_DICE_HYDRO",
@@ -9779,6 +9816,7 @@
         ],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "MonsterSkill_S_Oceanid_02",
         "iconHash": "6703139098543699890"
       },
@@ -9787,8 +9825,8 @@
         "name": "林野百态",
         "englishName": "The Myriad Wilds",
         "type": "GCG_SKILL_TAG_E",
-        "rawDescription": "随机召唤2种<color=#FFFFFFFF>$[C122010]</color>。（优先生成不同的类型，召唤区最多同时存在2种$[C122010]。）",
-        "description": "随机召唤2种纯水幻形。（优先生成不同的类型，召唤区最多同时存在2种纯水幻形。）",
+        "rawDescription": "随机召唤2种<color=#FFFFFFFF>$[C122010]</color>。（优先生成不同的类型）",
+        "description": "随机召唤2种纯水幻形。（优先生成不同的类型）",
         "playCost": [
           {
             "type": "GCG_COST_DICE_HYDRO",
@@ -9797,6 +9835,7 @@
         ],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "MonsterSkill_S_Oceanid_01",
         "iconHash": "11006419305558350769"
       },
@@ -9805,8 +9844,8 @@
         "name": "潮涌与激流",
         "englishName": "Tide and Torrent",
         "type": "GCG_SKILL_TAG_Q",
-        "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]；我方每有1个召唤物，再使此伤害+1。",
-        "description": "造成4点水元素伤害；我方每有1个召唤物，再使此伤害+1。",
+        "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]；我方每有1个召唤物，再使此伤害+2。",
+        "description": "造成2点水元素伤害；我方每有1个召唤物，再使此伤害+2。",
         "playCost": [
           {
             "type": "GCG_COST_DICE_HYDRO",
@@ -9822,9 +9861,9 @@
         "keyMap": {
           "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
           "D__KEY__DAMAGE_2": 6,
-          "D__KEY__DAMAGE_3": 7,
-          "D__KEY__DAMAGE_4": 8,
-          "D__KEY__DAMAGE": 4
+          "D__KEY__DAMAGE_3": 8,
+          "D__KEY__DAMAGE_4": 10,
+          "D__KEY__DAMAGE": 2
         },
         "icon": "MonsterSkill_E_Oceanid_01_HD",
         "iconHash": "17401473624550425004"
@@ -9977,7 +10016,7 @@
         "englishName": "Vortex Edge",
         "type": "GCG_SKILL_TAG_E",
         "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，然后$[K53]：<color=#FFFFFFFF>$[S22035]</color>。",
-        "description": "造成1点水元素伤害，然后准备技能：涟锋旋刃。",
+        "description": "造成2点水元素伤害，然后准备技能：涟锋旋刃。",
         "playCost": [
           {
             "type": "GCG_COST_DICE_HYDRO",
@@ -9988,7 +10027,7 @@
         "hidden": false,
         "keyMap": {
           "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
-          "D__KEY__DAMAGE": 1
+          "D__KEY__DAMAGE": 2
         },
         "icon": "MonsterSkill_S_InvokerHeraldWater_01",
         "iconHash": "14163270268675602036"
@@ -10029,6 +10068,7 @@
         "playCost": [],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "MonsterSkill_S_InvokerHeraldWater_02",
         "iconHash": "12941897788615105101"
       },
@@ -10057,13 +10097,14 @@
       {
         "id": 22037,
         "name": "护罩碎裂",
-        "englishName": "Broken Ward",
+        "englishName": "Broken Shield",
         "type": "GCG_SKILL_TAG_PASSIVE",
         "rawDescription": "",
         "description": "",
         "playCost": [],
         "targetList": [],
         "hidden": true,
+        "keyMap": {},
         "icon": "MonsterSkill_S_AbyssWater_02",
         "iconHash": "10826038520558549778"
       },
@@ -10133,8 +10174,8 @@
         "name": "迸落星雨",
         "englishName": "Starfall Shower",
         "type": "GCG_SKILL_TAG_E",
-        "rawDescription": "造成$[D__KEY__DAMAGE_2]点$[D__KEY__ELEMENT]，此角色每有3点<color=#FFFFFFFF>$[S22044]</color>提供的额外最大生命，此伤害+1（最多+3）。然后$[K56]1张原本元素骰费用最高的手牌。",
-        "description": "造成1点水元素伤害，此角色每有3点无尽食欲提供的额外最大生命，此伤害+1（最多+3）。然后舍弃1张原本元素骰费用最高的手牌。",
+        "rawDescription": "造成$[D__KEY__DAMAGE_2]点$[D__KEY__ELEMENT]，此角色每有3点<color=#FFFFFFFF>$[S22044]</color>提供的额外最大生命，此伤害+1（最多+5）。然后$[K56]1张原本元素骰费用最高的手牌。",
+        "description": "造成1点水元素伤害，此角色每有3点无尽食欲提供的额外最大生命，此伤害+1（最多+5）。然后舍弃1张原本元素骰费用最高的手牌。",
         "playCost": [
           {
             "type": "GCG_COST_DICE_HYDRO",
@@ -10298,7 +10339,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": true
+        "hidden": true,
+        "keyMap": {}
       }
     ],
     "hp": 11,
@@ -10410,7 +10452,7 @@
         "iconHash": "12191242929160916203"
       }
     ],
-    "hp": 9,
+    "hp": 10,
     "maxEnergy": 2,
     "cardFace": "UI_Gcg_CardFace_Char_Monster_Fatuus",
     "icon": "UI_Gcg_Char_MonsterIcon_Fatuus"
@@ -10743,6 +10785,7 @@
         "playCost": [],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "MonsterSkill_S_HermitCrabPrimo_02",
         "iconHash": "11562842950561932300"
       },
@@ -10781,7 +10824,7 @@
         "iconHash": "11562842950561932300"
       }
     ],
-    "hp": 5,
+    "hp": 6,
     "maxEnergy": 2,
     "cardFace": "UI_Gcg_CardFace_Char_Monster_HermitCrabPrimo",
     "icon": "UI_Gcg_Char_MonsterIcon_HermitCrabPrimo"
@@ -11217,6 +11260,7 @@
         ],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "MonsterSkill_S_FatuusSummoner_01",
         "iconHash": "12257954990389515764"
       },
@@ -11369,6 +11413,7 @@
         "playCost": [],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "MonsterSkill_S_ScorpionSacred_02",
         "iconHash": "14697751907638889406"
       }
@@ -11545,8 +11590,8 @@
         "name": "孤风刀势",
         "englishName": "Blustering Blade",
         "type": "GCG_SKILL_TAG_E",
-        "rawDescription": "召唤<color=#FFFFFFFF>$[C125011]</color>。",
-        "description": "召唤剑影·孤风。",
+        "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C125011]</color>。",
+        "description": "造成1点风元素伤害，召唤剑影·孤风。",
         "playCost": [
           {
             "type": "GCG_COST_DICE_ANEMO",
@@ -11555,6 +11600,10 @@
         ],
         "targetList": [],
         "hidden": false,
+        "keyMap": {
+          "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+          "D__KEY__DAMAGE": 1
+        },
         "icon": "MonsterSkill_S_Ningyo_01",
         "iconHash": "1195330834910186194"
       },
@@ -11563,8 +11612,8 @@
         "name": "霜驰影突",
         "englishName": "Frosty Assault",
         "type": "GCG_SKILL_TAG_E",
-        "rawDescription": "召唤<color=#FFFFFFFF>$[C125012]</color>。",
-        "description": "召唤剑影·霜驰。",
+        "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C125012]</color>。",
+        "description": "造成1点冰元素伤害，召唤剑影·霜驰。",
         "playCost": [
           {
             "type": "GCG_COST_DICE_CRYO",
@@ -11573,6 +11622,10 @@
         ],
         "targetList": [],
         "hidden": false,
+        "keyMap": {
+          "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+          "D__KEY__DAMAGE": 1
+        },
         "icon": "MonsterSkill_S_Ningyo_02",
         "iconHash": "6052049503972696139"
       },
@@ -11581,8 +11634,8 @@
         "name": "机巧伪天狗抄",
         "englishName": "Pseudo Tengu Sweeper",
         "type": "GCG_SKILL_TAG_Q",
-        "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，触发所有我方<color=#FFFFFFFF>剑影</color>召唤物的效果。（不消耗其可用次数）",
-        "description": "造成4点风元素伤害，触发所有我方剑影召唤物的效果。（不消耗其可用次数）",
+        "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，触发我方所有<color=#FFFFFFFF>剑影</color>召唤物的效果。（不消耗其可用次数）",
+        "description": "造成4点风元素伤害，触发我方所有剑影召唤物的效果。（不消耗其可用次数）",
         "playCost": [
           {
             "type": "GCG_COST_DICE_ANEMO",
@@ -11806,8 +11859,8 @@
         "name": "盘绕风引",
         "englishName": "Swirling Squall",
         "type": "GCG_SKILL_TAG_E",
-        "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，抓1张牌。",
-        "description": "造成3点风元素伤害，抓1张牌。",
+        "rawDescription": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，抓1张<color=#FFFFFFFF>$[C124051]</color>；然后，手牌中每有1张<color=#FFFFFFFF>$[C124051]</color>，抓1张牌（每回合最多抓2张)。",
+        "description": "造成2点风元素伤害，抓1张噬骸能量块；然后，手牌中每有1张噬骸能量块，抓1张牌（每回合最多抓2张)。",
         "playCost": [
           {
             "type": "GCG_COST_DICE_ANEMO",
@@ -11818,7 +11871,7 @@
         "hidden": false,
         "keyMap": {
           "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
-          "D__KEY__DAMAGE": 3
+          "D__KEY__DAMAGE": 2
         },
         "icon": "MonsterSkill_S_ChrysopeleaSacred_01",
         "iconHash": "10045855549446946751"
@@ -11859,6 +11912,21 @@
         "playCost": [],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
+        "icon": "MonsterSkill_S_ChrysopeleaSacred_02",
+        "iconHash": "9799792064314053498"
+      },
+      {
+        "id": 25035,
+        "name": "不朽亡骸·风",
+        "englishName": "Immortal Remnants: Anemo",
+        "type": "GCG_SKILL_TAG_PASSIVE",
+        "rawDescription": "【被动】战斗开始时，生成6张<color=#FFFFFFFF>$[C124051]</color>，均匀放入牌库。",
+        "description": "【被动】战斗开始时，生成6张噬骸能量块，均匀放入牌库。",
+        "playCost": [],
+        "targetList": [],
+        "hidden": true,
+        "keyMap": {},
         "icon": "MonsterSkill_S_ChrysopeleaSacred_02",
         "iconHash": "9799792064314053498"
       }
@@ -12385,11 +12453,12 @@
         "name": "增殖感召",
         "englishName": "Invokation of Propagation",
         "type": "GCG_SKILL_TAG_PASSIVE",
-        "rawDescription": "【被动】战斗开始时，生成5张<color=#FFFFFFFF>$[C127021]</color>，随机放入牌库。我方召唤4个<color=#FFFFFFFF>$[C127022]</color>后，此角色附属<color=#FFFFFFFF>$[C127027]</color>，并获得1点<color=#FFFFFFFF>$[K6]</color>。",
-        "description": "【被动】战斗开始时，生成5张唤醒眷属，随机放入牌库。我方召唤4个增殖生命体后，此角色附属重燃的绿洲之心，并获得1点护盾。",
+        "rawDescription": "【被动】战斗开始时，生成6张<color=#FFFFFFFF>$[C127021]</color>，随机放入牌库。我方召唤4个<color=#FFFFFFFF>$[C127022]</color>后，此角色附属<color=#FFFFFFFF>$[C127027]</color>，并获得2点<color=#FFFFFFFF>$[K6]</color>。",
+        "description": "【被动】战斗开始时，生成6张唤醒眷属，随机放入牌库。我方召唤4个增殖生命体后，此角色附属重燃的绿洲之心，并获得2点护盾。",
         "playCost": [],
         "targetList": [],
         "hidden": false,
+        "keyMap": {},
         "icon": "MonsterSkill_S_Apep_02",
         "iconHash": "10522305635224819829"
       }
@@ -12633,6 +12702,7 @@
   },
   {
     "id": 6301,
+    "sinceVersion": "v4.3.0",
     "obtainable": false,
     "name": "焚尽的炽炎魔女",
     "englishName": "Crimson Witch of Embers",
@@ -12741,6 +12811,7 @@
   },
   {
     "id": 6601,
+    "sinceVersion": "v4.3.0",
     "obtainable": false,
     "name": "若陀龙王",
     "englishName": "Azhdaha",
@@ -12868,6 +12939,7 @@
   },
   {
     "id": 6602,
+    "sinceVersion": "v4.3.0",
     "obtainable": false,
     "name": "若陀龙王",
     "englishName": "Azhdaha",
@@ -12995,6 +13067,7 @@
   },
   {
     "id": 6603,
+    "sinceVersion": "v4.3.0",
     "obtainable": false,
     "name": "若陀龙王",
     "englishName": "Azhdaha",
@@ -13122,6 +13195,7 @@
   },
   {
     "id": 6604,
+    "sinceVersion": "v4.3.0",
     "obtainable": false,
     "name": "若陀龙王",
     "englishName": "Azhdaha",

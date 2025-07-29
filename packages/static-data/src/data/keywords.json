@@ -185,8 +185,8 @@
     "id": 104,
     "rawName": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
     "name": "雷元素伤害",
-    "rawDescription": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]",
-    "description": "附着雷元素，可发生元素反应：\n超载：本伤害+2，目标强制切换到下一个角色\n超导：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\n感电：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\n原激化：本伤害+1，生成使下2次草元素或雷元素伤害+1的[激化领域]"
+    "rawDescription": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下3次草/雷伤害+1的[<color=#FFFFFFFF>激化领域</color>]",
+    "description": "附着雷元素，可发生元素反应：\n超载：本伤害+2，目标强制切换到下一个角色\n超导：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\n感电：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\n原激化：本伤害+1，生成使下3次草/雷伤害+1的[激化领域]"
   },
   {
     "id": 105,
@@ -206,8 +206,8 @@
     "id": 107,
     "rawName": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
     "name": "草元素伤害",
-    "rawDescription": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]",
-    "description": "附着草元素，可发生元素反应：\n绽放：本伤害+1，生成使下次火元素或雷元素伤害+2的[草原核]\n燃烧：本伤害+1，生成回合结束时造成1点火元素伤害的[燃烧烈焰]（可用次数1，最多叠加到2）\n原激化：本伤害+1，生成使下2次草元素或雷元素伤害+1的[激化领域]"
+    "rawDescription": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火/雷伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下3次草/雷伤害+1的[<color=#FFFFFFFF>激化领域</color>]",
+    "description": "附着草元素，可发生元素反应：\n绽放：本伤害+1，生成使下次火/雷伤害+2的[草原核]\n燃烧：本伤害+1，生成回合结束时造成1点火伤害的[燃烧烈焰]（可用次数1，最多叠加到2）\n原激化：本伤害+1，生成使下3次草/雷伤害+1的[激化领域]"
   },
   {
     "id": 111,
@@ -339,8 +339,8 @@
     "id": 204,
     "rawName": "<color=#FFACFFFF>附着{SPRITE_PRESET#2104}雷元素</color>",
     "name": "附着雷元素",
-    "rawDescription": "不通过伤害附着{SPRITE_PRESET#2104}雷元素时，发生的元素反应会忽略伤害效果：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：没有效果\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：没有效果\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]",
-    "description": "不通过伤害附着雷元素时，发生的元素反应会忽略伤害效果：\n超载：目标强制切换到下一个角色\n超导：没有效果\n感电：没有效果\n原激化：生成使下2次草元素或雷元素伤害+1的[激化领域]"
+    "rawDescription": "不通过伤害附着{SPRITE_PRESET#2104}雷元素时，发生的元素反应会忽略伤害效果：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：没有效果\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：没有效果\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：生成使下3次草/雷伤害+1的[<color=#FFFFFFFF>激化领域</color>]",
+    "description": "不通过伤害附着雷元素时，发生的元素反应会忽略伤害效果：\n超载：目标强制切换到下一个角色\n超导：没有效果\n感电：没有效果\n原激化：生成使下3次草/雷伤害+1的[激化领域]"
   },
   {
     "id": 206,
@@ -353,8 +353,8 @@
     "id": 207,
     "rawName": "<color=#7EC236FF>附着{SPRITE_PRESET#2107}草元素</color>",
     "name": "附着草元素",
-    "rawDescription": "不通过伤害附着{SPRITE_PRESET#2107}草元素时，发生的元素反应会忽略伤害效果：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]",
-    "description": "不通过伤害附着草元素时，发生的元素反应会忽略伤害效果：\n绽放：生成使下次火元素或雷元素伤害+2的[草原核]\n燃烧：生成回合结束时造成1点火元素伤害的[燃烧烈焰]（可用次数1，最多叠加到2）\n原激化：生成使下2次草元素或雷元素伤害+1的[激化领域]"
+    "rawDescription": "不通过伤害附着{SPRITE_PRESET#2107}草元素时，发生的元素反应会忽略伤害效果：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：生成使下次火/雷伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：生成回合结束时造成1点火伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：生成使下3次草/雷伤害+1的[<color=#FFFFFFFF>激化领域</color>]",
+    "description": "不通过伤害附着草元素时，发生的元素反应会忽略伤害效果：\n绽放：生成使下次火/雷伤害+2的[草原核]\n燃烧：生成回合结束时造成1点火伤害的[燃烧烈焰]（可用次数1，最多叠加到2）\n原激化：生成使下3次草/雷伤害+1的[激化领域]"
   },
   {
     "id": 212,
@@ -374,8 +374,8 @@
     "id": 214,
     "rawName": "<color=#FFACFFFF>{SPRITE_PRESET#2104}雷元素相关反应</color>",
     "name": "雷元素相关反应",
-    "rawDescription": "{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>结晶（雷）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>扩散（雷）</color>：对目标以外的所有敌方角色造成1点雷元素伤害",
-    "description": "超载：本伤害+2，目标强制切换到下一个角色\n超导：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\n感电：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\n原激化：本伤害+1，生成使下2次草元素或雷元素伤害+1的[激化领域]\n结晶（雷）：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\n扩散（雷）：对目标以外的所有敌方角色造成1点雷元素伤害"
+    "rawDescription": "{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下3次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>结晶（雷）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>扩散（雷）</color>：对目标以外的所有敌方角色造成1点雷元素伤害",
+    "description": "超载：本伤害+2，目标强制切换到下一个角色\n超导：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\n感电：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\n原激化：本伤害+1，生成使下3次草元素或雷元素伤害+1的[激化领域]\n结晶（雷）：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\n扩散（雷）：对目标以外的所有敌方角色造成1点雷元素伤害"
   },
   {
     "id": 215,
@@ -388,8 +388,8 @@
     "id": 217,
     "rawName": "<color=#7EC236FF>{SPRITE_PRESET#2107}草元素相关反应</color>",
     "name": "草元素相关反应",
-    "rawDescription": "{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]",
-    "description": "绽放：本伤害+1，生成使下次火元素或雷元素伤害+2的[草原核]\n燃烧：本伤害+1，生成回合结束时造成1点火元素伤害的[燃烧烈焰]（可用次数1，最多叠加到2）\n原激化：本伤害+1，生成使下2次草元素或雷元素伤害+1的[激化领域]"
+    "rawDescription": "{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火/雷伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下3次草/雷伤害+1的[<color=#FFFFFFFF>激化领域</color>]",
+    "description": "绽放：本伤害+1，生成使下次火/雷伤害+2的[草原核]\n燃烧：本伤害+1，生成回合结束时造成1点火伤害的[燃烧烈焰]（可用次数1，最多叠加到2）\n原激化：本伤害+1，生成使下3次草/雷伤害+1的[激化领域]"
   },
   {
     "id": 252,
@@ -808,8 +808,8 @@
     "id": 2003,
     "rawName": "海底宝藏",
     "name": "海底宝藏",
-    "rawDescription": "费用：0{SPRITE_PRESET#1108}\\n生成1个随机基础元素骰，治疗我方出战角色1点。（每个角色每回合最多受到1次来自本效果的治疗）",
-    "description": "费用：0\n生成1个随机基础元素骰，治疗我方出战角色1点。（每个角色每回合最多受到1次来自本效果的治疗）"
+    "rawDescription": "费用：0{SPRITE_PRESET#1108}\\n治疗我方出战角色1点，生成1个随机基础元素骰。",
+    "description": "费用：0\n治疗我方出战角色1点，生成1个随机基础元素骰。"
   },
   {
     "id": 2004,

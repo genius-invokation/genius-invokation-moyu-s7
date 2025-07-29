@@ -196,8 +196,8 @@
       "GCG_TAG_DENDRO_PRODUCE"
     ],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>我方对敌方出战角色造成$[K104]或$[K107]时</color>，伤害值+1。\\n<color=#FFFFFFFF>$[K3]：2</color>",
-    "description": "我方对敌方出战角色造成雷元素伤害或草元素伤害时，伤害值+1。\n可用次数：2",
+    "rawDescription": "<color=#FFFFFFFF>我方对敌方出战角色造成$[K104]或$[K107]时</color>，伤害值+1。\\n<color=#FFFFFFFF>$[K3]：3</color>",
+    "description": "我方对敌方出战角色造成雷元素伤害或草元素伤害时，伤害值+1。\n可用次数：3",
     "shownToken": "GCG_TOKEN_LIFE",
     "shownIcon": "GCG_TOKEN_ICON_CLOCK",
     "hidden": false,
@@ -873,7 +873,6 @@
     "hintType": "GCG_HINT_CRYO",
     "shownToken": "GCG_TOKEN_LIFE",
     "shownIcon": "GCG_TOKEN_ICON_BARRIER_SHIELD",
-    "persistEffectType": "GCG_PERSIST_EFFECT_EXPECTO_PATRONUM",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Common_Barrier",
@@ -974,8 +973,8 @@
     "englishName": "Chonghua Frost Field",
     "tags": [],
     "skills": [],
-    "rawDescription": "我方单手剑、双手剑或长柄武器角色造成的$[K100]变为$[K101]，<color=#FFFFFFFF>普通攻击</color>造成的伤害+1。\\n<color=#FFFFFFFF>$[K4]：2</color>",
-    "description": "我方单手剑、双手剑或长柄武器角色造成的物理伤害变为冰元素伤害，普通攻击造成的伤害+1。\n持续回合：2",
+    "rawDescription": "我方单手剑、双手剑或长柄武器角色造成的$[K100]变为$[K101]，<color=#FFFFFFFF>普通攻击</color>造成的伤害+1。\\n<color=#FFFFFFFF>$[K4]：3</color>",
+    "description": "我方单手剑、双手剑或长柄武器角色造成的物理伤害变为冰元素伤害，普通攻击造成的伤害+1。\n持续回合：3",
     "shownToken": "GCG_TOKEN_ROUND_COUNT",
     "shownIcon": "GCG_TOKEN_ICON_HOURGLASS",
     "hidden": false,
@@ -1068,8 +1067,8 @@
     "englishName": "Icy Quill",
     "tags": [],
     "skills": [],
-    "rawDescription": "我方角色造成的$[K101]+1。（包括角色引发的<color=#99FFFFFF>{SPRITE_PRESET#2101}冰元素</color>扩散的伤害）\\n<color=#FFFFFFFF>$[K3]：2</color>",
-    "description": "我方角色造成的冰元素伤害+1。（包括角色引发的冰元素扩散的伤害）\n可用次数：2",
+    "rawDescription": "我方角色造成的$[K101]+1。（包括角色引发的<color=#99FFFFFF>{SPRITE_PRESET#2101}冰元素</color>扩散的伤害）\\n<color=#FFFFFFFF>$[K3]：3</color>",
+    "description": "我方角色造成的冰元素伤害+1。（包括角色引发的冰元素扩散的伤害）\n可用次数：3",
     "shownToken": "GCG_TOKEN_LIFE",
     "shownIcon": "GCG_TOKEN_ICON_CLOCK",
     "hidden": false,
@@ -1084,8 +1083,8 @@
     "englishName": "Icy Quill",
     "tags": [],
     "skills": [],
-    "rawDescription": "我方角色造成的$[K101]+1。（包括角色引发的<color=#99FFFFFF>{SPRITE_PRESET#2101}冰元素</color>扩散的伤害）\\n<color=#FFFFFFFF>$[K3]：2</color>\\n我方角色通过<color=#FFFFFFFF>「普通攻击」</color>触发此效果时，不消耗可用次数。（每回合1次）",
-    "description": "我方角色造成的冰元素伤害+1。（包括角色引发的冰元素扩散的伤害）\n可用次数：2\n我方角色通过「普通攻击」触发此效果时，不消耗可用次数。（每回合1次）",
+    "rawDescription": "我方角色造成的$[K101]+1。（包括角色引发的<color=#99FFFFFF>{SPRITE_PRESET#2101}冰元素</color>扩散的伤害）\\n<color=#FFFFFFFF>$[K3]：3</color>\\n我方角色通过<color=#FFFFFFFF>「普通攻击」</color>触发此效果时，不消耗可用次数。（每回合1次）",
+    "description": "我方角色造成的冰元素伤害+1。（包括角色引发的冰元素扩散的伤害）\n可用次数：3\n我方角色通过「普通攻击」触发此效果时，不消耗可用次数。（每回合1次）",
     "shownToken": "GCG_TOKEN_LIFE",
     "shownIcon": "GCG_TOKEN_ICON_CLOCK",
     "hidden": false,
@@ -1465,7 +1464,6 @@
     "description": "我方出战角色受到至少为3的伤害时：抵消1点伤害。\n可用次数：2",
     "shownToken": "GCG_TOKEN_LIFE",
     "shownIcon": "GCG_TOKEN_ICON_BARRIER_SHIELD",
-    "persistEffectType": "GCG_PERSIST_EFFECT_EXPECTO_PATRONUM",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Common_Barrier",
@@ -1478,8 +1476,8 @@
     "englishName": "Rainbow Bladework",
     "tags": [],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>我方角色普通攻击后：</color>造成1点$[K102]。\\n<color=#FFFFFFFF>$[K3]：3</color>",
-    "description": "我方角色普通攻击后：造成1点水元素伤害。\n可用次数：3",
+    "rawDescription": "<color=#FFFFFFFF>我方角色普通攻击后：</color>造成2点$[K102]。\\n<color=#FFFFFFFF>$[K3]：3</color>",
+    "description": "我方角色普通攻击后：造成2点水元素伤害。\n可用次数：3",
     "buffType": "GCG_STATE_BUFF_HYDRO",
     "hintType": "GCG_HINT_HYDRO",
     "shownToken": "GCG_TOKEN_LIFE",
@@ -1787,8 +1785,8 @@
     "englishName": "Lingering Aeon",
     "tags": [],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>结束阶段：</color>对所附属角色造成2点$[K102]。\\n<color=#FFFFFFFF>$[K3]：1</color>",
-    "description": "结束阶段：对所附属角色造成2点水元素伤害。\n可用次数：1",
+    "rawDescription": "<color=#FFFFFFFF>结束阶段：</color>对所附属角色造成3点$[K102]。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+    "description": "结束阶段：对所附属角色造成3点水元素伤害。\n可用次数：1",
     "buffType": "GCG_STATE_BUFF_NEGATIVE",
     "shownToken": "GCG_TOKEN_LIFE",
     "hidden": false,
@@ -1819,8 +1817,8 @@
     "englishName": "Exquisite Throw",
     "tags": [],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>我方角色普通攻击后：</color>造成1点$[K102]。\\n<color=#FFFFFFFF>$[K4]：2</color>",
-    "description": "我方角色普通攻击后：造成1点水元素伤害。\n持续回合：2",
+    "rawDescription": "<color=#FFFFFFFF>我方角色普通攻击后：</color>造成2点$[K102]。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+    "description": "我方角色普通攻击后：造成2点水元素伤害。\n持续回合：2",
     "buffType": "GCG_STATE_BUFF_HYDRO",
     "hintType": "GCG_HINT_HYDRO",
     "shownToken": "GCG_TOKEN_ROUND_COUNT",
@@ -2047,7 +2045,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": false
+        "hidden": false,
+        "keyMap": {}
       },
       {
         "id": 1121422,
@@ -2077,7 +2076,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": false
+        "hidden": false,
+        "keyMap": {}
       }
     ],
     "rawDescription": "<color=#FFFFFFFF>双方切换角色后，且$[A1214]为出战角色时：</color>消耗1点<color=#FFFFFFFF>「夜魂值」</color>，使敌方出战角色附属<color=#FFFFFFFF>$[K1034]</color>。\\n$[K58]：$[S1121422]\\n所附属角色<color=#FFFFFFFF>「夜魂值」</color>为0时，弃置此牌；此牌被弃置时，所附属角色结束<color=#FFFFFFFF>$[C112141]</color>。",
@@ -2247,7 +2247,7 @@
     "englishName": "Aurous Blaze",
     "tags": [],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>$[A1305]以外的我方角色使用技能后：</color>造成1点$[K103]。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+    "rawDescription": "$[A1305]以外的我方角色使用技能后：造成1点$[K103]。\\n<color=#FFFFFFFF>$[K4]：2</color>",
     "description": "宵宫以外的我方角色使用技能后：造成1点火元素伤害。\n持续回合：2",
     "buffType": "GCG_STATE_BUFF_PYRO",
     "hintType": "GCG_HINT_PYRO",
@@ -2696,8 +2696,7 @@
     "name": "驰轮车·跃升",
     "englishName": "Flamestrider: Soaring Ascent",
     "tags": [
-      "GCG_TAG_VEHICLE",
-      "GCG_TAG_NON_DISCOVERABLE"
+      "GCG_TAG_VEHICLE"
     ],
     "skills": [
       {
@@ -2731,7 +2730,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": false
+        "hidden": false,
+        "keyMap": {}
       }
     ],
     "rawDescription": "<color=#FFFFFFFF>此牌被$[K56]后：</color>对敌方出战角色造成1点$[K103]。\\n$[K58]：$[S1131541]\\n（仅<color=#FFFFFFFF>$[A1315]</color>可用）\\n<color=#FFFFFFFF>$[K3]：2</color>\\n（角色最多装备1个「{SPRITE_PRESET#3008}特技」）",
@@ -2751,8 +2751,7 @@
     "name": "驰轮车·涉渡",
     "englishName": "Flamestrider: Blazing Trail",
     "tags": [
-      "GCG_TAG_VEHICLE",
-      "GCG_TAG_NON_DISCOVERABLE"
+      "GCG_TAG_VEHICLE"
     ],
     "skills": [
       {
@@ -2787,7 +2786,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": false
+        "hidden": false,
+        "keyMap": {}
       }
     ],
     "rawDescription": "<color=#FFFFFFFF>此卡牌被打出时：</color>随机触发我方1个「召唤物」的「结束阶段」效果。\\n$[K58]：$[S1131551]\\n（仅<color=#FFFFFFFF>$[A1315]</color>可用）\\n<color=#FFFFFFFF>$[K3]：2</color>\\n（角色最多装备1个「{SPRITE_PRESET#3008}特技」）",
@@ -2807,8 +2807,7 @@
     "name": "驰轮车·疾驰",
     "englishName": "Flamestrider: Full Throttle",
     "tags": [
-      "GCG_TAG_VEHICLE",
-      "GCG_TAG_NON_DISCOVERABLE"
+      "GCG_TAG_VEHICLE"
     ],
     "skills": [
       {
@@ -3886,8 +3885,7 @@
     "name": "竹星",
     "englishName": "Starwicker",
     "tags": [
-      "GCG_TAG_VEHICLE",
-      "GCG_TAG_NON_DISCOVERABLE"
+      "GCG_TAG_VEHICLE"
     ],
     "skills": [
       {
@@ -4016,7 +4014,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": false
+        "hidden": false,
+        "keyMap": {}
       }
     ],
     "rawDescription": "$[K58]：$[S1151121]。\\n此牌被弃置时，所附属角色结束<color=#FFFFFFFF>$[C115111]</color>。\\n（角色最多装备1个「{SPRITE_PRESET#3008}特技」）",
@@ -4289,12 +4288,11 @@
     "englishName": "Ushi",
     "tags": [],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>我方出战角色受到伤害时：</color>抵消1点伤害。\\n<color=#FFFFFFFF>$[K3]：1</color>，耗尽时不弃置此牌。\\n<color=#FFFFFFFF>此召唤物在场期间可触发1次：</color>我方角色受到伤害后，为$[A1605]附属$[K1007]。\\n<color=#FFFFFFFF>结束阶段：</color>弃置此牌，造成1点$[K106]。",
-    "description": "我方出战角色受到伤害时：抵消1点伤害。\n可用次数：1，耗尽时不弃置此牌。\n此召唤物在场期间可触发1次：我方角色受到伤害后，为荒泷一斗附属乱神之怪力。\n结束阶段：弃置此牌，造成1点岩元素伤害。",
+    "rawDescription": "<color=#FFFFFFFF>我方出战角色受到伤害时：</color>抵消1点伤害。\\n<color=#FFFFFFFF>$[K3]：1</color>，耗尽时不弃置此牌。\\n<color=#FFFFFFFF>此召唤物在场期间可触发1次：</color>我方出战角色受到伤害后，为$[A1605]附属$[K1007]。\\n<color=#FFFFFFFF>结束阶段：</color>弃置此牌，造成1点$[K106]。",
+    "description": "我方出战角色受到伤害时：抵消1点伤害。\n可用次数：1，耗尽时不弃置此牌。\n此召唤物在场期间可触发1次：我方出战角色受到伤害后，为荒泷一斗附属乱神之怪力。\n结束阶段：弃置此牌，造成1点岩元素伤害。",
     "hintType": "GCG_HINT_GEO",
     "shownToken": "GCG_TOKEN_SHIELD",
     "shownIcon": "GCG_TOKEN_ICON_BARRIER_SHIELD",
-    "persistEffectType": "GCG_PERSIST_EFFECT_EXPECTO_PATRONUM",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Common_Barrier",
@@ -4322,8 +4320,8 @@
     "englishName": "Raging Oni King",
     "tags": [],
     "skills": [],
-    "rawDescription": "所附属角色<color=#FFFFFFFF>普通攻击</color>造成的伤害+1，造成的$[K100]变为$[K106]。\\n<color=#FFFFFFFF>$[K4]：2</color>\\n<color=#FFFFFFFF>所附属角色普通攻击后：</color>为其附属$[K1007]。（每回合1次）",
-    "description": "所附属角色普通攻击造成的伤害+1，造成的物理伤害变为岩元素伤害。\n持续回合：2\n所附属角色普通攻击后：为其附属乱神之怪力。（每回合1次）",
+    "rawDescription": "所附属角色<color=#FFFFFFFF>普通攻击</color>造成的伤害+2，造成的$[K100]变为$[K106]。\\n<color=#FFFFFFFF>$[K4]：2</color>\\n<color=#FFFFFFFF>所附属角色普通攻击后：</color>为其附属$[K1007]。（每回合1次）",
+    "description": "所附属角色普通攻击造成的伤害+2，造成的物理伤害变为岩元素伤害。\n持续回合：2\n所附属角色普通攻击后：为其附属乱神之怪力。（每回合1次）",
     "buffType": "GCG_STATE_BUFF_GEO",
     "shownToken": "GCG_TOKEN_ROUND_COUNT",
     "shownIcon": "GCG_TOKEN_ICON_HOURGLASS",
@@ -4389,11 +4387,10 @@
       "GCG_TAG_SHEILD"
     ],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>准备技能期间：</color>提供2点$[K6]，保护所附属的角色。",
+    "rawDescription": "准备技能期间：提供2点$[K6]，保护所附属的角色。",
     "description": "准备技能期间：提供2点护盾，保护所附属的角色。",
     "shownToken": "GCG_TOKEN_LIFE",
     "shownIcon": "GCG_TOKEN_ICON_NORMAL_SHIELD",
-    "persistEffectType": "GCG_PERSIST_EFFECT_PROTEGO",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Common_Shield",
@@ -4404,9 +4401,7 @@
     "type": "GCG_CARD_STATE",
     "name": "长枪开相",
     "englishName": "Spear Flourish",
-    "tags": [
-      "GCG_TAG_PREPARE_SKILL"
-    ],
+    "tags": [],
     "skills": [],
     "rawDescription": "本角色将在下次行动时，直接使用技能：<color=#FFFFFFFF>$[S16074]</color>。",
     "description": "本角色将在下次行动时，直接使用技能：长枪开相。",
@@ -4422,8 +4417,8 @@
     "englishName": "Flying Cloud Flag Formation",
     "tags": [],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>我方角色进行普通攻击时：</color>如果我方手牌数量不多于1，则此技能少花费1个元素骰。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到4次）",
-    "description": "我方角色进行普通攻击时：如果我方手牌数量不多于1，则此技能少花费1个元素骰。\n可用次数：1（可叠加，最多叠加到4次）",
+    "rawDescription": "<color=#FFFFFFFF>我方角色进行普通攻击时：</color>造成的伤害+1。\\n如果我方手牌数量不多于1，则此技能少花费1个元素骰。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到4次）",
+    "description": "我方角色进行普通攻击时：造成的伤害+1。\n如果我方手牌数量不多于1，则此技能少花费1个元素骰。\n可用次数：1（可叠加，最多叠加到4次）",
     "buffType": "GCG_STATE_BUFF_GEO",
     "shownToken": "GCG_TOKEN_LIFE",
     "shownIcon": "GCG_TOKEN_ICON_HOURGLASS",
@@ -4623,8 +4618,7 @@
     "name": "冲天转转",
     "englishName": "Turbo Twirly",
     "tags": [
-      "GCG_TAG_VEHICLE",
-      "GCG_TAG_NON_DISCOVERABLE"
+      "GCG_TAG_VEHICLE"
     ],
     "skills": [
       {
@@ -4636,7 +4630,7 @@
         "description": "附属角色消耗1点「夜魂值」，造成2点岩元素伤害，对敌方下一个后台角色造成1点穿透伤害。",
         "playCost": [
           {
-            "type": "GCG_COST_DICE_GEO",
+            "type": "GCG_COST_DICE_VOID",
             "count": 1
           }
         ],
@@ -4658,7 +4652,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": false
+        "hidden": false,
+        "keyMap": {}
       },
       {
         "id": 1161023,
@@ -4669,7 +4664,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": false
+        "hidden": false,
+        "keyMap": {}
       },
       {
         "id": 1161024,
@@ -4680,11 +4676,12 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": false
+        "hidden": false,
+        "keyMap": {}
       }
     ],
-    "rawDescription": "<color=#FFFFFFFF>附属角色切换至后台时：</color>消耗1点夜魂值，召唤<color=#FFFFFFFF>$[C116103]</color>。\\n$[K58]：$[S1161021]\\n（角色最多装备1个「{SPRITE_PRESET#3008}特技」）\\n所附属角色<color=#FFFFFFFF>「夜魂值」</color>为0时，弃置此牌；此牌被弃置时，所附属角色结束<color=#FFFFFFFF>$[C116104]</color>。",
-    "description": "附属角色切换至后台时：消耗1点夜魂值，召唤冲天转转·脱离。\n特技：转转冲击\n（角色最多装备1个「特技」）\n所附属角色「夜魂值」为0时，弃置此牌；此牌被弃置时，所附属角色结束夜魂加持。",
+    "rawDescription": "<color=#FFFFFFFF>附属角色切换至后台时：</color>消耗1点夜魂值，召唤<color=#FFFFFFFF>$[C116103]</color>。",
+    "description": "附属角色切换至后台时：消耗1点夜魂值，召唤冲天转转·脱离。",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Vehicle_Kachina",
@@ -4793,7 +4790,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": false
+        "hidden": false,
+        "keyMap": {}
       },
       {
         "id": 1161123,
@@ -4804,7 +4802,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": false
+        "hidden": false,
+        "keyMap": {}
       },
       {
         "id": 1161124,
@@ -4815,7 +4814,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": false
+        "hidden": false,
+        "keyMap": {}
       }
     ],
     "rawDescription": "所附属角色造成的$[K100]变为$[K106]。\\n$[K58]：$[S1161121]\\n所附属角色<color=#FFFFFFFF>「夜魂值」</color>为0时，弃置此牌；此牌被弃置时，所附属角色结束<color=#FFFFFFFF>$[C116111]</color>。",
@@ -5306,8 +5306,8 @@
     "englishName": "Burst Scan",
     "tags": [],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>双方选择行动前：</color>如果我方场上存在$[C116]或$[C112082]，则使其$[K3]-1，并$[K56]我方牌库顶的1张卡牌。然后，造成所$[K56]卡牌原本元素骰费用的$[K107]。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到3次）",
-    "description": "双方选择行动前：如果我方场上存在草原核或丰穰之核，则使其可用次数-1，并舍弃我方牌库顶的1张卡牌。然后，造成所舍弃卡牌原本元素骰费用的草元素伤害。\n可用次数：1（可叠加，最多叠加到3次）",
+    "rawDescription": "<color=#FFFFFFFF>双方选择行动前：</color>如果我方场上存在$[C116]或$[C112082]，则使其$[K3]-1，并$[K56]我方牌库顶的1张卡牌。然后，造成所$[K56]卡牌原本元素骰费用+1的$[K107]。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到3次）",
+    "description": "双方选择行动前：如果我方场上存在草原核或丰穰之核，则使其可用次数-1，并舍弃我方牌库顶的1张卡牌。然后，造成所舍弃卡牌原本元素骰费用+1的草元素伤害。\n可用次数：1（可叠加，最多叠加到3次）",
     "buffType": "GCG_STATE_BUFF_DENDRO",
     "hintType": "GCG_HINT_DENDRO",
     "shownToken": "GCG_TOKEN_LIFE",
@@ -5361,7 +5361,6 @@
     "buffType": "GCG_STATE_BUFF_DENDRO",
     "shownToken": "GCG_TOKEN_NYX_VALUE",
     "shownIcon": "GCG_TOKEN_ICON_HOURGLASS",
-    "persistEffectType": "GCG_PERSIST_EFFECT_NYX_KINICH",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Nightsoul_Grass",
@@ -5721,8 +5720,8 @@
     "englishName": "Oceanid Mimic",
     "tags": [],
     "skills": [],
-    "rawDescription": "「纯水幻形」共有3种，最多同时存在2种：\\n<color=#FFFFFFFF>花鼠</color>：结束阶段造成2点$[K102]，可用2次。\\n<color=#FFFFFFFF>飞鸢</color>：结束阶段造成1点$[K102]，可用3次。\\n<color=#FFFFFFFF>蛙</color>：抵挡1点出战角色受到的伤害，可用1次；耗尽后，在结束阶段造成2点$[K102]。",
-    "description": "「纯水幻形」共有3种，最多同时存在2种：\n花鼠：结束阶段造成2点水元素伤害，可用2次。\n飞鸢：结束阶段造成1点水元素伤害，可用3次。\n蛙：抵挡1点出战角色受到的伤害，可用1次；耗尽后，在结束阶段造成2点水元素伤害。",
+    "rawDescription": "「纯水幻形」共有3种：\\n<color=#FFFFFFFF>花鼠</color>：结束阶段造成2点$[K102]，可用2次。\\n<color=#FFFFFFFF>飞鸢</color>：结束阶段造成1点$[K102]，可用3次。\\n<color=#FFFFFFFF>蛙</color>：可抵挡2点伤害，并在耗尽后造成2点$[K102]。",
+    "description": "「纯水幻形」共有3种：\n花鼠：结束阶段造成2点水元素伤害，可用2次。\n飞鸢：结束阶段造成1点水元素伤害，可用3次。\n蛙：可抵挡2点伤害，并在耗尽后造成2点水元素伤害。",
     "hidden": false,
     "remainAfterDie": false,
     "cardFace": "UI_Gcg_CardFace_Summon_Ferret"
@@ -5731,7 +5730,7 @@
     "id": 122011,
     "type": "GCG_CARD_SUMMON",
     "name": "纯水幻形·花鼠",
-    "englishName": "Oceanic Mimic: Squirrel",
+    "englishName": "Oceanic Mimic: Ferret",
     "tags": [],
     "skills": [],
     "rawDescription": "<color=#FFFFFFFF>结束阶段：</color>造成2点$[K102]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
@@ -5766,12 +5765,11 @@
     "englishName": "Oceanic Mimic: Frog",
     "tags": [],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>我方出战角色受到伤害时：</color>抵消1点伤害。\\n<color=#FFFFFFFF>$[K3]：1</color>，耗尽时不弃置此牌。\\n<color=#FFFFFFFF>结束阶段，如果$[K3]已耗尽：</color>弃置此牌，以造成2点$[K102]。",
-    "description": "我方出战角色受到伤害时：抵消1点伤害。\n可用次数：1，耗尽时不弃置此牌。\n结束阶段，如果可用次数已耗尽：弃置此牌，以造成2点水元素伤害。",
+    "rawDescription": "我方出战角色受到伤害时：抵消1点伤害。\\n<color=#FFFFFFFF>$[K3]：2</color>，耗尽时不弃置此牌。\\n<color=#FFFFFFFF>结束阶段，如果$[K3]已耗尽：</color>弃置此牌，以造成2点$[K102]。",
+    "description": "我方出战角色受到伤害时：抵消1点伤害。\n可用次数：2，耗尽时不弃置此牌。\n结束阶段，如果可用次数已耗尽：弃置此牌，以造成2点水元素伤害。",
     "hintType": "GCG_HINT_HYDRO",
     "shownToken": "GCG_TOKEN_SHIELD",
     "shownIcon": "GCG_TOKEN_ICON_BARRIER_SHIELD",
-    "persistEffectType": "GCG_PERSIST_EFFECT_EXPECTO_PATRONUM",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Common_Barrier",
@@ -5785,8 +5783,8 @@
     "englishName": "Oceanid Mimic",
     "tags": [],
     "skills": [],
-    "rawDescription": "「纯水幻形」共有3种，最多同时存在2种：\\n<color=#FFFFFFFF>花鼠</color>：结束阶段造成2点$[K102]，可用2次。\\n<color=#FFFFFFFF>飞鸢</color>：结束阶段造成1点$[K102]，可用3次。\\n<color=#FFFFFFFF>蛙</color>：抵挡1点出战角色受到的伤害，可用1次；耗尽后，在结束阶段造成2点$[K102]。",
-    "description": "「纯水幻形」共有3种，最多同时存在2种：\n花鼠：结束阶段造成2点水元素伤害，可用2次。\n飞鸢：结束阶段造成1点水元素伤害，可用3次。\n蛙：抵挡1点出战角色受到的伤害，可用1次；耗尽后，在结束阶段造成2点水元素伤害。",
+    "rawDescription": "「纯水幻形」共有3种：\\n<color=#FFFFFFFF>花鼠</color>：结束阶段造成2点$[K102]，可用2次。\\n<color=#FFFFFFFF>飞鸢</color>：结束阶段造成1点$[K102]，可用3次。\\n<color=#FFFFFFFF>蛙</color>：可抵挡2点伤害，并在耗尽后造成2点$[K102]。",
+    "description": "「纯水幻形」共有3种：\n花鼠：结束阶段造成2点水元素伤害，可用2次。\n飞鸢：结束阶段造成1点水元素伤害，可用3次。\n蛙：可抵挡2点伤害，并在耗尽后造成2点水元素伤害。",
     "hidden": false,
     "remainAfterDie": false,
     "cardFace": "UI_Gcg_CardFace_Summon_Ferret"
@@ -5844,9 +5842,7 @@
     "type": "GCG_CARD_STATE",
     "name": "涟锋旋刃",
     "englishName": "Rippling Blades",
-    "tags": [
-      "GCG_TAG_PREPARE_SKILL"
-    ],
+    "tags": [],
     "skills": [],
     "rawDescription": "本角色将在下次行动时，直接使用技能：<color=#FFFFFFFF>$[S22035]</color>。",
     "description": "本角色将在下次行动时，直接使用技能：涟锋旋刃。",
@@ -5942,10 +5938,8 @@
     "englishName": "Deep Devourer's Domain",
     "tags": [],
     "skills": [],
-    "rawDescription": "我方$[K56]或$[K57]的卡牌，会被吞噬。\\n<color=#FFFFFFFF>每吞噬3张牌：</color>$[A2204]在回合结束时获得1点额外最大生命；如果其中存在原本元素骰费用值相同的牌，则额外获得1点；如果3张均相同，再额外获得1点。",
-    "description": "我方舍弃或调和的卡牌，会被吞噬。\n每吞噬3张牌：吞星之鲸在回合结束时获得1点额外最大生命；如果其中存在原本元素骰费用值相同的牌，则额外获得1点；如果3张均相同，再额外获得1点。",
-    "rawPlayingDescription": "我方$[K56]或$[K57]的卡牌，会被吞噬。\\n<color=#FFFFFFFF>每吞噬3张牌：</color>$[A2204]在回合结束时获得1点额外最大生命；如果其中存在原本元素骰费用值相同的牌，则额外获得1点；如果3张均相同，再额外获得1点。（<color=#D3BC8EFF>本回合结束时获得${[GCG_TOKEN_SHIELD]}点</color>）",
-    "playingDescription": "我方舍弃或调和的卡牌，会被吞噬。\n每吞噬3张牌：吞星之鲸在回合结束时获得1点额外最大生命；如果其中存在原本元素骰费用值相同的牌，则额外获得1点；如果3张均相同，再额外获得1点。（本回合结束时获得${[GCG_TOKEN_SHIELD]}点）",
+    "rawDescription": "我方$[K56]或$[K57]的手牌，会被吞噬。\\n<color=#FFFFFFFF>每吞噬3张牌：</color>$[A2204]获得1点额外最大生命；如果其中存在原本元素骰费用值相同的牌，则额外获得1点；如果3张均相同，再额外获得1点。",
+    "description": "我方舍弃或调和的手牌，会被吞噬。\n每吞噬3张牌：吞星之鲸获得1点额外最大生命；如果其中存在原本元素骰费用值相同的牌，则额外获得1点；如果3张均相同，再额外获得1点。",
     "buffType": "GCG_STATE_BUFF_HYDRO",
     "shownToken": "GCG_TOKEN_COUNTER",
     "shownIcon": "GCG_TOKEN_ICON_CLOCK",
@@ -5984,7 +5978,6 @@
     "hintType": "GCG_HINT_ELECTRO",
     "shownToken": "GCG_TOKEN_LIFE",
     "shownIcon": "GCG_TOKEN_ICON_HOURGLASS",
-    "persistEffectType": "GCG_PERSIST_EFFECT_EXPECTO_PATRONUM",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Common_Barrier",
@@ -6138,7 +6131,6 @@
     "description": "所附属角色受到的伤害-1，造成的伤害+1。\n可用次数：2",
     "shownToken": "GCG_TOKEN_LIFE",
     "shownIcon": "GCG_TOKEN_ICON_CLOCK",
-    "persistEffectType": "GCG_PERSIST_EFFECT_EXPECTO_PATRONUM",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Common_Barrier",
@@ -6155,7 +6147,6 @@
     "description": "所附属角色受到的伤害-1，造成的伤害+1。\n可用次数：3\n所附属角色造成的物理伤害变为火元素伤害。",
     "shownToken": "GCG_TOKEN_LIFE",
     "shownIcon": "GCG_TOKEN_ICON_CLOCK",
-    "persistEffectType": "GCG_PERSIST_EFFECT_EXPECTO_PATRONUM",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Common_Barrier",
@@ -6315,7 +6306,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": false
+        "hidden": false,
+        "keyMap": {}
       }
     ],
     "rawDescription": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>如可能，失去1点充能，以抵消1点伤害，然后生成<color=#FFFFFFFF>$[C123032]</color>。（每回合至多2次）\\n$[K58]：$[S1230311]\\n<color=#FFFFFFFF>$[K3]：1</color>\\n（角色最多装备1个「{SPRITE_PRESET#3008}特技」）",
@@ -6392,7 +6384,6 @@
     "description": "每层提供1点护盾，保护所附属角色。",
     "shownToken": "GCG_TOKEN_LIFE",
     "shownIcon": "GCG_TOKEN_ICON_NORMAL_SHIELD",
-    "persistEffectType": "GCG_PERSIST_EFFECT_PROTEGO",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Common_Shield",
@@ -6403,9 +6394,7 @@
     "type": "GCG_CARD_STATE",
     "name": "积蓄烈威",
     "englishName": "Accruing Power",
-    "tags": [
-      "GCG_TAG_PREPARE_SKILL"
-    ],
+    "tags": [],
     "skills": [],
     "rawDescription": "本角色将在下次行动时，直接使用技能：<color=#FFFFFFFF>$[S23046]</color>。",
     "description": "本角色将在下次行动时，直接使用技能：炽烈轰破。",
@@ -6570,8 +6559,8 @@
     "englishName": "Lightning Rod",
     "tags": [],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>所附属角色受到$[A2402]及其召唤物造成的伤害时：</color>移除此状态，使此伤害+1。\\n（同一方场上最多存在一个此状态。$[A2402]的部分技能，会以所附属角色为目标。）",
-    "description": "所附属角色受到雷音权现及其召唤物造成的伤害时：移除此状态，使此伤害+1。\n（同一方场上最多存在一个此状态。雷音权现的部分技能，会以所附属角色为目标。）",
+    "rawDescription": "<color=#FFFFFFFF>此状态存在期间，可以触发1次：</color>所附属角色受到$[A2402]及其召唤物造成的伤害+1。\\n（同一方场上最多存在一个此状态。$[A2402]的部分技能，会以所附属角色为目标。）",
+    "description": "此状态存在期间，可以触发1次：所附属角色受到雷音权现及其召唤物造成的伤害+1。\n（同一方场上最多存在一个此状态。雷音权现的部分技能，会以所附属角色为目标。）",
     "buffType": "GCG_STATE_BUFF_NEGATIVE",
     "hidden": false,
     "remainAfterDie": false,
@@ -6743,8 +6732,8 @@
   {
     "id": 124053,
     "type": "GCG_CARD_ONSTAGE",
-    "name": "噬骸能量块（冷却中）",
-    "englishName": "Bonecruncher's Energy Block (on cooldown)",
+    "name": "噬骸能量块",
+    "englishName": "Bonecruncher's Energy Block",
     "tags": [],
     "skills": [],
     "rawDescription": "本回合无法再打出<color=#FFFFFFFF>$[C124051]</color>。",
@@ -7221,11 +7210,10 @@
       "GCG_TAG_SHEILD"
     ],
     "skills": [],
-    "rawDescription": "提供1点$[K6]，保护所附属角色。",
-    "description": "提供1点护盾，保护所附属角色。",
+    "rawDescription": "提供2点$[K6]，保护所附属角色。",
+    "description": "提供2点护盾，保护所附属角色。",
     "shownToken": "GCG_TOKEN_LIFE",
     "shownIcon": "GCG_TOKEN_ICON_NORMAL_SHIELD",
-    "persistEffectType": "GCG_PERSIST_EFFECT_PROTEGO",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Common_Shield",
@@ -7238,8 +7226,8 @@
     "englishName": "Heart of Oasis",
     "tags": [],
     "skills": [],
-    "rawDescription": "我方召唤4个<color=#FFFFFFFF>$[C127022]</color>后，我方<color=#FFFFFFFF>$[A2702]</color>附属<color=#FFFFFFFF>$[C127027]</color>，并获得1点<color=#FFFFFFFF>$[K6]</color>。",
-    "description": "我方召唤4个增殖生命体后，我方阿佩普的绿洲守望者附属重燃的绿洲之心，并获得1点护盾。",
+    "rawDescription": "我方召唤4个<color=#FFFFFFFF>$[C127022]</color>后，我方<color=#FFFFFFFF>$[A2702]</color>附属<color=#FFFFFFFF>$[C127027]</color>，并获得2点<color=#FFFFFFFF>$[K6]</color>。",
+    "description": "我方召唤4个增殖生命体后，我方阿佩普的绿洲守望者附属重燃的绿洲之心，并获得2点护盾。",
     "shownToken": "GCG_TOKEN_COUNTER",
     "shownIcon": "GCG_TOKEN_ICON_HOURGLASS",
     "hidden": false,
@@ -7320,7 +7308,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": false
+        "hidden": false,
+        "keyMap": {}
       }
     ],
     "rawDescription": "$[K58]：$[S1270321]\\n<color=#FFFFFFFF>$[K3]：2</color>\\n（角色最多装备1个「{SPRITE_PRESET#3008}特技」）",
@@ -8652,10 +8641,10 @@
       "GCG_TAG_SLOWLY"
     ],
     "skills": [],
-    "rawDescription": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1101]</color>时，装备此牌。\\n$[A1101]装备此牌后，立刻使用一次<color=#FFD780FF>$[S11013]</color>。\\n装备有此牌的$[A1101]使用<color=#FFFFFFFF>$[S11013]</color>时：如果此技能在本场对局中曾经被使用过，则其对敌方后台角色造成的$[K5]改为3点。\\n（牌组中包含$[A1101]，才能加入牌组）",
-    "description": "战斗行动：我方出战角色为甘雨时，装备此牌。\n甘雨装备此牌后，立刻使用一次霜华矢。\n装备有此牌的甘雨使用霜华矢时：如果此技能在本场对局中曾经被使用过，则其对敌方后台角色造成的穿透伤害改为3点。\n（牌组中包含甘雨，才能加入牌组）",
-    "rawPlayingDescription": "装备有此牌的$[A1101]使用<color=#FFFFFFFF>$[S11013]</color>时：如果此技能在本场对局中曾经被使用过，则其对敌方后台角色造成的$[K5]改为3点。",
-    "playingDescription": "装备有此牌的甘雨使用霜华矢时：如果此技能在本场对局中曾经被使用过，则其对敌方后台角色造成的穿透伤害改为3点。",
+    "rawDescription": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1101]</color>时，装备此牌。\\n$[A1101]装备此牌后，立刻使用一次<color=#FFD780FF>$[S11013]</color>。\\n装备有此牌的$[A1101]使用<color=#FFFFFFFF>$[S11013]</color>时：如果此技能在本场对局中曾经被使用过，则其造成的$[K101]+1，并且改为对敌方后台角色造成3点$[K5]。\\n（牌组中包含$[A1101]，才能加入牌组）",
+    "description": "战斗行动：我方出战角色为甘雨时，装备此牌。\n甘雨装备此牌后，立刻使用一次霜华矢。\n装备有此牌的甘雨使用霜华矢时：如果此技能在本场对局中曾经被使用过，则其造成的冰元素伤害+1，并且改为对敌方后台角色造成3点穿透伤害。\n（牌组中包含甘雨，才能加入牌组）",
+    "rawPlayingDescription": "装备有此牌的$[A1101]使用<color=#FFFFFFFF>$[S11013]</color>时：如果此技能在本场对局中曾经被使用过，则其造成的$[K101]+1，并且改为对敌方后台角色造成3点$[K5]。",
+    "playingDescription": "装备有此牌的甘雨使用霜华矢时：如果此技能在本场对局中曾经被使用过，则其造成的冰元素伤害+1，并且改为对敌方后台角色造成3点穿透伤害。",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Equip_Talent",
@@ -8709,10 +8698,10 @@
       "GCG_TAG_SLOWLY"
     ],
     "skills": [],
-    "rawDescription": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1104]</color>时，装备此牌。\\n$[A1104]装备此牌后，立刻使用一次<color=#FFD780FF>$[S11042]</color>。\\n装备有此牌的$[A1104]生成的<color=#FFFFFFFF>$[C111041]</color>获得以下效果：\\n使我方单手剑、双手剑或长柄武器角色的<color=#FFFFFFFF>普通攻击</color>伤害+1。\\n（牌组中包含$[A1104]，才能加入牌组）",
-    "description": "战斗行动：我方出战角色为重云时，装备此牌。\n重云装备此牌后，立刻使用一次重华叠霜。\n装备有此牌的重云生成的重华叠霜领域获得以下效果：\n使我方单手剑、双手剑或长柄武器角色的普通攻击伤害+1。\n（牌组中包含重云，才能加入牌组）",
-    "rawPlayingDescription": "装备有此牌的$[A1104]生成的<color=#FFFFFFFF>$[C111041]</color>获得以下效果：\\n使我方单手剑、双手剑或长柄武器角色的<color=#FFFFFFFF>普通攻击</color>伤害+1。",
-    "playingDescription": "装备有此牌的重云生成的重华叠霜领域获得以下效果：\n使我方单手剑、双手剑或长柄武器角色的普通攻击伤害+1。",
+    "rawDescription": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1104]</color>时，装备此牌。\\n$[A1104]装备此牌后，立刻使用一次<color=#FFD780FF>$[S11042]</color>。\\n装备有此牌的$[A1104]生成的<color=#FFFFFFFF>$[C111041]</color>获得以下效果：\\n初始$[K4]+1，并且使我方单手剑、双手剑或长柄武器角色的<color=#FFFFFFFF>普通攻击</color>伤害+1。\\n（牌组中包含$[A1104]，才能加入牌组）",
+    "description": "战斗行动：我方出战角色为重云时，装备此牌。\n重云装备此牌后，立刻使用一次重华叠霜。\n装备有此牌的重云生成的重华叠霜领域获得以下效果：\n初始持续回合+1，并且使我方单手剑、双手剑或长柄武器角色的普通攻击伤害+1。\n（牌组中包含重云，才能加入牌组）",
+    "rawPlayingDescription": "装备有此牌的$[A1104]生成的<color=#FFFFFFFF>$[C111041]</color>获得以下效果：\\n初始$[K4]+1，并且使我方单手剑、双手剑或长柄武器角色的<color=#FFFFFFFF>普通攻击</color>伤害+1。",
+    "playingDescription": "装备有此牌的重云生成的重华叠霜领域获得以下效果：\n初始持续回合+1，并且使我方单手剑、双手剑或长柄武器角色的普通攻击伤害+1。",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Equip_Talent",
@@ -9522,10 +9511,10 @@
       "GCG_TAG_SLOWLY"
     ],
     "skills": [],
-    "rawDescription": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1404]</color>时，装备此牌。\\n$[A1404]装备此牌后，立刻使用一次<color=#FFD780FF>$[S14042]</color>。\\n装备有此牌的$[A1404]在<color=#FFFFFFFF>$[C114041]</color>的「凭依」级数至少为2时，使用<color=#FFFFFFFF>$[S14042]</color>造成的伤害+1。（每回合至多2次）\\n（牌组中包含$[A1404]，才能加入牌组）",
-    "description": "战斗行动：我方出战角色为赛诺时，装备此牌。\n赛诺装备此牌后，立刻使用一次秘仪·律渊渡魂。\n装备有此牌的赛诺在启途誓使的「凭依」级数至少为2时，使用秘仪·律渊渡魂造成的伤害+1。（每回合至多2次）\n（牌组中包含赛诺，才能加入牌组）",
-    "rawPlayingDescription": "装备有此牌的$[A1404]在<color=#FFFFFFFF>$[C114041]</color>的「凭依」级数至少为2时，使用<color=#FFFFFFFF>$[S14042]</color>造成的伤害+1。（每回合至多2次）",
-    "playingDescription": "装备有此牌的赛诺在启途誓使的「凭依」级数至少为2时，使用秘仪·律渊渡魂造成的伤害+1。（每回合至多2次）",
+    "rawDescription": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1404]</color>时，装备此牌。\\n$[A1404]装备此牌后，立刻使用一次<color=#FFD780FF>$[S14042]</color>。\\n装备有此牌的$[A1404]在<color=#FFFFFFFF>$[C114041]</color>的「凭依」级数至少为2时，使用<color=#FFFFFFFF>$[S14042]</color>造成的伤害+2。（每回合1次）\\n（牌组中包含$[A1404]，才能加入牌组）",
+    "description": "战斗行动：我方出战角色为赛诺时，装备此牌。\n赛诺装备此牌后，立刻使用一次秘仪·律渊渡魂。\n装备有此牌的赛诺在启途誓使的「凭依」级数至少为2时，使用秘仪·律渊渡魂造成的伤害+2。（每回合1次）\n（牌组中包含赛诺，才能加入牌组）",
+    "rawPlayingDescription": "装备有此牌的$[A1404]在<color=#FFFFFFFF>$[C114041]</color>的「凭依」级数至少为2时，使用<color=#FFFFFFFF>$[S14042]</color>造成的伤害+2。（每回合1次）",
+    "playingDescription": "装备有此牌的赛诺在启途誓使的「凭依」级数至少为2时，使用秘仪·律渊渡魂造成的伤害+2。（每回合1次）",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Equip_Talent",
@@ -9980,10 +9969,10 @@
       "GCG_TAG_SLOWLY"
     ],
     "skills": [],
-    "rawDescription": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1603]</color>时，装备此牌。\\n$[A1603]装备此牌后，立刻使用一次<color=#FFD780FF>$[S16033]</color>。\\n装备有此牌的$[A1603]生命值至少为7时，$[A1603]造成的伤害和我方召唤物造成的$[K106]+1。（每回合3次）\\n（牌组中包含$[A1603]，才能加入牌组）",
-    "description": "战斗行动：我方出战角色为钟离时，装备此牌。\n钟离装备此牌后，立刻使用一次地心·磐礴。\n装备有此牌的钟离生命值至少为7时，钟离造成的伤害和我方召唤物造成的岩元素伤害+1。（每回合3次）\n（牌组中包含钟离，才能加入牌组）",
-    "rawPlayingDescription": "装备有此牌的$[A1603]生命值至少为7时，$[A1603]造成的伤害和我方召唤物造成的$[K106]+1。（每回合3次）",
-    "playingDescription": "装备有此牌的钟离生命值至少为7时，钟离造成的伤害和我方召唤物造成的岩元素伤害+1。（每回合3次）",
+    "rawDescription": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1603]</color>时，装备此牌。\\n$[A1603]装备此牌后，立刻使用一次<color=#FFD780FF>$[S16033]</color>。\\n装备有此牌的$[A1603]生命值至少为7时，$[A1603]造成的伤害和我方召唤物造成的$[K106]+1。\\n（牌组中包含$[A1603]，才能加入牌组）",
+    "description": "战斗行动：我方出战角色为钟离时，装备此牌。\n钟离装备此牌后，立刻使用一次地心·磐礴。\n装备有此牌的钟离生命值至少为7时，钟离造成的伤害和我方召唤物造成的岩元素伤害+1。\n（牌组中包含钟离，才能加入牌组）",
+    "rawPlayingDescription": "装备有此牌的$[A1603]生命值至少为7时，$[A1603]造成的伤害和我方召唤物造成的$[K106]+1。",
+    "playingDescription": "装备有此牌的钟离生命值至少为7时，钟离造成的伤害和我方召唤物造成的岩元素伤害+1。",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Equip_Talent",
@@ -10056,10 +10045,10 @@
       "GCG_TAG_SLOWLY"
     ],
     "skills": [],
-    "rawDescription": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1607]</color>时，装备此牌。\\n$[A1607]装备此牌后，立刻使用一次<color=#FFD780FF>$[S16073]</color>。\\n装备有此牌的$[A1607]在场，且我方触发<color=#FFFFFFFF>$[C116073]</color>时：如果我方没有手牌，则使此次技能伤害+2。\\n（牌组中包含$[A1607]，才能加入牌组）",
-    "description": "战斗行动：我方出战角色为云堇时，装备此牌。\n云堇装备此牌后，立刻使用一次破嶂见旌仪。\n装备有此牌的云堇在场，且我方触发飞云旗阵时：如果我方没有手牌，则使此次技能伤害+2。\n（牌组中包含云堇，才能加入牌组）",
-    "rawPlayingDescription": "装备有此牌的$[A1607]在场，且我方触发<color=#FFFFFFFF>$[C116073]</color>时：如果我方没有手牌，则使此次技能伤害+2。",
-    "playingDescription": "装备有此牌的云堇在场，且我方触发飞云旗阵时：如果我方没有手牌，则使此次技能伤害+2。",
+    "rawDescription": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1607]</color>时，装备此牌。\\n$[A1607]装备此牌后，立刻使用一次<color=#FFD780FF>$[S16073]</color>。\\n装备有此牌的$[A1607]在场时，如果我方没有手牌，则<color=#FFFFFFFF>$[C116073]</color>会使普通攻击造成的伤害额外+2。\\n（牌组中包含$[A1607]，才能加入牌组）",
+    "description": "战斗行动：我方出战角色为云堇时，装备此牌。\n云堇装备此牌后，立刻使用一次破嶂见旌仪。\n装备有此牌的云堇在场时，如果我方没有手牌，则飞云旗阵会使普通攻击造成的伤害额外+2。\n（牌组中包含云堇，才能加入牌组）",
+    "rawPlayingDescription": "装备有此牌的$[A1607]在场时，如果我方没有手牌，则<color=#FFFFFFFF>$[C116073]</color>会使普通攻击造成的伤害额外+2。",
+    "playingDescription": "装备有此牌的云堇在场时，如果我方没有手牌，则飞云旗阵会使普通攻击造成的伤害额外+2。",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Equip_Talent",
@@ -10112,10 +10101,10 @@
       "GCG_TAG_TALENT"
     ],
     "skills": [],
-    "rawDescription": "我方<color=#FFFFFFFF>$[C116102]</color>或<color=#FFFFFFFF>$[C116103]</color>触发效果后，抓1张牌。（每回合1次）\\n（牌组中包含$[A1610]，才能加入牌组）",
-    "description": "我方冲天转转或冲天转转·脱离触发效果后，抓1张牌。（每回合1次）\n（牌组中包含卡齐娜，才能加入牌组）",
-    "rawPlayingDescription": "我方<color=#FFFFFFFF>$[C116102]</color>或<color=#FFFFFFFF>$[C116103]</color>触发效果后，抓1张牌。（每回合1次）",
-    "playingDescription": "我方冲天转转或冲天转转·脱离触发效果后，抓1张牌。（每回合1次）",
+    "rawDescription": "我方<color=#FFFFFFFF>$[C116102]</color>或<color=#FFFFFFFF>$[C116103]</color>触发效果后，抓1张牌。（每回合2次）\\n（牌组中包含$[A1610]，才能加入牌组）",
+    "description": "我方冲天转转或冲天转转·脱离触发效果后，抓1张牌。（每回合2次）\n（牌组中包含卡齐娜，才能加入牌组）",
+    "rawPlayingDescription": "我方<color=#FFFFFFFF>$[C116102]</color>或<color=#FFFFFFFF>$[C116103]</color>触发效果后，抓1张牌。（每回合2次）",
+    "playingDescription": "我方冲天转转或冲天转转·脱离触发效果后，抓1张牌。（每回合2次）",
     "shownToken": "GCG_TOKEN_COUNTER",
     "shownIcon": "GCG_TOKEN_ICON_HOURGLASS",
     "hidden": false,
@@ -10485,10 +10474,10 @@
       "GCG_TAG_SLOWLY"
     ],
     "skills": [],
-    "rawDescription": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A2201]</color>时，装备此牌。\\n$[A2201]装备此牌后，立刻使用一次<color=#FFD780FF>$[S22014]</color>。\\n装备有此牌的$[A2201]使用<color=#FFFFFFFF>$[S22014]</color>时：我方所有召唤物$[K3]+1。\\n（牌组中包含$[A2201]，才能加入牌组）",
-    "description": "战斗行动：我方出战角色为纯水精灵·洛蒂娅时，装备此牌。\n纯水精灵·洛蒂娅装备此牌后，立刻使用一次潮涌与激流。\n装备有此牌的纯水精灵·洛蒂娅使用潮涌与激流时：我方所有召唤物可用次数+1。\n（牌组中包含纯水精灵·洛蒂娅，才能加入牌组）",
-    "rawPlayingDescription": "装备有此牌的$[A2201]使用<color=#FFFFFFFF>$[S22014]</color>时：我方所有召唤物$[K3]+1。",
-    "playingDescription": "装备有此牌的纯水精灵·洛蒂娅使用潮涌与激流时：我方所有召唤物可用次数+1。",
+    "rawDescription": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A2201]</color>时，装备此牌。\\n$[A2201]装备此牌后，立刻使用一次<color=#FFD780FF>$[S22014]</color>。\\n装备有此牌的$[A2201]施放<color=#FFFFFFFF>$[S22014]</color>时，使我方所有召唤物$[K3]+1。\\n（牌组中包含$[A2201]，才能加入牌组）",
+    "description": "战斗行动：我方出战角色为纯水精灵·洛蒂娅时，装备此牌。\n纯水精灵·洛蒂娅装备此牌后，立刻使用一次潮涌与激流。\n装备有此牌的纯水精灵·洛蒂娅施放潮涌与激流时，使我方所有召唤物可用次数+1。\n（牌组中包含纯水精灵·洛蒂娅，才能加入牌组）",
+    "rawPlayingDescription": "装备有此牌的$[A2201]施放<color=#FFFFFFFF>$[S22014]</color>时，使我方所有召唤物$[K3]+1。",
+    "playingDescription": "装备有此牌的纯水精灵·洛蒂娅施放潮涌与激流时，使我方所有召唤物可用次数+1。",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Equip_Talent",
@@ -10649,13 +10638,12 @@
     "name": "悲号回唱",
     "englishName": "Grieving Echo",
     "tags": [
-      "GCG_TAG_TALENT",
-      "GCG_TAG_SLOWLY"
+      "GCG_TAG_TALENT"
     ],
     "skills": [],
-    "rawDescription": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A2402]</color>时，装备此牌。\\n$[A2402]装备此牌后，立刻使用一次<color=#FFD780FF>$[S24022]</color>。\\n装备有此牌的$[A2402]在场，附属有<color=#FFFFFFFF>$[C124022]</color>的敌方角色受到伤害时：我方抓1张牌。（每回合1次）\\n（牌组中包含$[A2402]，才能加入牌组）",
-    "description": "战斗行动：我方出战角色为雷音权现时，装备此牌。\n雷音权现装备此牌后，立刻使用一次雷墙倾轧。\n装备有此牌的雷音权现在场，附属有雷鸣探知的敌方角色受到伤害时：我方抓1张牌。（每回合1次）\n（牌组中包含雷音权现，才能加入牌组）",
-    "rawPlayingDescription": "装备有此牌的$[A2402]在场，附属有<color=#FFFFFFFF>$[C124022]</color>的敌方角色受到伤害时：我方抓1张牌。（每回合1次）",
+    "rawDescription": "装备有此牌的<color=#FFFFFFFF>$[A2402]</color>在场，附属有<color=#FFFFFFFF>$[C124022]</color>的敌方角色受到伤害时：我方抓1张牌。（每回合1次）\\n（牌组中包含$[A2402]，才能加入牌组）",
+    "description": "装备有此牌的雷音权现在场，附属有雷鸣探知的敌方角色受到伤害时：我方抓1张牌。（每回合1次）\n（牌组中包含雷音权现，才能加入牌组）",
+    "rawPlayingDescription": "装备有此牌的<color=#FFFFFFFF>$[A2402]</color>在场，附属有<color=#FFFFFFFF>$[C124022]</color>的敌方角色受到伤害时：我方抓1张牌。（每回合1次）",
     "playingDescription": "装备有此牌的雷音权现在场，附属有雷鸣探知的敌方角色受到伤害时：我方抓1张牌。（每回合1次）",
     "hidden": false,
     "remainAfterDie": false,
@@ -10745,10 +10733,10 @@
       "GCG_TAG_SLOWLY"
     ],
     "skills": [],
-    "rawDescription": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A2501]</color>时，装备此牌。\\n$[A2501]装备此牌后，立刻使用一次<color=#FFD780FF>$[S25012]</color>。\\n装备有此牌的$[A2501]使用<color=#FFFFFFFF>$[S25012]</color>后，我方切换到后一个角色；使用<color=#FFFFFFFF>$[S25013]</color>后，我方切换到前一个角色。\\n（牌组中包含$[A2501]，才能加入牌组）",
-    "description": "战斗行动：我方出战角色为魔偶剑鬼时，装备此牌。\n魔偶剑鬼装备此牌后，立刻使用一次孤风刀势。\n装备有此牌的魔偶剑鬼使用孤风刀势后，我方切换到后一个角色；使用霜驰影突后，我方切换到前一个角色。\n（牌组中包含魔偶剑鬼，才能加入牌组）",
-    "rawPlayingDescription": "装备有此牌的$[A2501]使用<color=#FFFFFFFF>$[S25012]</color>后，我方切换到后一个角色；使用<color=#FFFFFFFF>$[S25013]</color>后，我方切换到前一个角色。",
-    "playingDescription": "装备有此牌的魔偶剑鬼使用孤风刀势后，我方切换到后一个角色；使用霜驰影突后，我方切换到前一个角色。",
+    "rawDescription": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A2501]</color>时，装备此牌。\\n$[A2501]装备此牌后，立刻使用一次<color=#FFD780FF>$[S25012]</color>。\\n装备有此牌的$[A2501]施放<color=#FFFFFFFF>$[S25012]</color>后，我方切换到后一个角色；施放<color=#FFFFFFFF>$[S25013]</color>后，我方切换到前一个角色。\\n（牌组中包含$[A2501]，才能加入牌组）",
+    "description": "战斗行动：我方出战角色为魔偶剑鬼时，装备此牌。\n魔偶剑鬼装备此牌后，立刻使用一次孤风刀势。\n装备有此牌的魔偶剑鬼施放孤风刀势后，我方切换到后一个角色；施放霜驰影突后，我方切换到前一个角色。\n（牌组中包含魔偶剑鬼，才能加入牌组）",
+    "rawPlayingDescription": "装备有此牌的$[A2501]施放<color=#FFFFFFFF>$[S25012]</color>后，我方切换到后一个角色；施放<color=#FFFFFFFF>$[S25013]</color>后，我方切换到前一个角色。",
+    "playingDescription": "装备有此牌的魔偶剑鬼施放孤风刀势后，我方切换到后一个角色；施放霜驰影突后，我方切换到前一个角色。",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Equip_Talent",
@@ -11926,8 +11914,8 @@
     "englishName": "Wind and Freedom (In Effect)",
     "tags": [],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>本回合中，我方角色使用技能后：</color>将下一个我方后台角色切换到场上。",
-    "description": "本回合中，我方角色使用技能后：将下一个我方后台角色切换到场上。",
+    "rawDescription": "<color=#FFFFFFFF>本回合中，轮到我方行动期间有对方角色被击倒时：</color>本次行动结束后，我方可以再连续行动一次。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+    "description": "本回合中，轮到我方行动期间有对方角色被击倒时：本次行动结束后，我方可以再连续行动一次。\n可用次数：1",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Common_Buff",
@@ -12551,9 +12539,8 @@
     "englishName": "Minty Meat Rolls (In Effect)",
     "tags": [],
     "skills": [],
-    "rawDescription": "本回合中，该角色<color=#FFFFFFFF>「普通攻击」</color>少花费1个$[K309]。\\n<color=#FFFFFFFF>$[K3]：3</color>",
-    "description": "本回合中，该角色「普通攻击」少花费1个无色元素。\n可用次数：3",
-    "shownToken": "GCG_TOKEN_LIFE",
+    "rawDescription": "本回合中，该角色<color=#FFFFFFFF>普通攻击</color>少花费1$[K309]。",
+    "description": "本回合中，该角色普通攻击少花费1无色元素。",
     "shownIcon": "GCG_TOKEN_ICON_HOURGLASS",
     "hidden": false,
     "remainAfterDie": false,
@@ -13288,10 +13275,10 @@
       "GCG_TAG_WEAPON_CLAYMORE"
     ],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>如可能，$[K56]原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点<color=#FFFFFFFF>「坚忍标记」</color>。（每回合1次）\\n<color=#FFFFFFFF>角色造成伤害时：</color>如果此牌已有<color=#FFFFFFFF>「坚忍标记」</color>，则消耗所有<color=#FFFFFFFF>「坚忍标记」</color>，使此伤害+1，并且每消耗1点<color=#FFFFFFFF>「坚忍标记」</color>就抓1张牌。\\n（<color=#FFFFFFFF>「{SPRITE_PRESET#3203}双手剑」角色</color>才能装备。角色最多装备1件「{SPRITE_PRESET#3003}武器」）",
-    "description": "所附属角色受到伤害时：如可能，舍弃原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点「坚忍标记」。（每回合1次）\n角色造成伤害时：如果此牌已有「坚忍标记」，则消耗所有「坚忍标记」，使此伤害+1，并且每消耗1点「坚忍标记」就抓1张牌。\n（「双手剑」角色才能装备。角色最多装备1件「武器」）",
-    "rawPlayingDescription": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>如可能，$[K56]原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点<color=#FFFFFFFF>「坚忍标记」</color>。（每回合1次）\\n<color=#FFFFFFFF>角色造成伤害时：</color>如果此牌已有<color=#FFFFFFFF>「坚忍标记」</color>，则消耗所有<color=#FFFFFFFF>「坚忍标记」</color>，使此伤害+1，并且每消耗1点<color=#FFFFFFFF>「坚忍标记」</color>就抓1张牌。",
-    "playingDescription": "所附属角色受到伤害时：如可能，舍弃原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点「坚忍标记」。（每回合1次）\n角色造成伤害时：如果此牌已有「坚忍标记」，则消耗所有「坚忍标记」，使此伤害+1，并且每消耗1点「坚忍标记」就抓1张牌。",
+    "rawDescription": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>如可能，$[K56]原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点<color=#FFFFFFFF>「坚忍标记」</color>。（每回合2次）\\n<color=#FFFFFFFF>角色造成伤害时：</color>如果此牌已有<color=#FFFFFFFF>「坚忍标记」</color>，则消耗所有<color=#FFFFFFFF>「坚忍标记」</color>，使此伤害+1，并且每消耗1点<color=#FFFFFFFF>「坚忍标记」</color>就抓1张牌。\\n（<color=#FFFFFFFF>「{SPRITE_PRESET#3203}双手剑」角色</color>才能装备。角色最多装备1件「{SPRITE_PRESET#3003}武器」）",
+    "description": "所附属角色受到伤害时：如可能，舍弃原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点「坚忍标记」。（每回合2次）\n角色造成伤害时：如果此牌已有「坚忍标记」，则消耗所有「坚忍标记」，使此伤害+1，并且每消耗1点「坚忍标记」就抓1张牌。\n（「双手剑」角色才能装备。角色最多装备1件「武器」）",
+    "rawPlayingDescription": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>如可能，$[K56]原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点<color=#FFFFFFFF>「坚忍标记」</color>。（每回合2次）\\n<color=#FFFFFFFF>角色造成伤害时：</color>如果此牌已有<color=#FFFFFFFF>「坚忍标记」</color>，则消耗所有<color=#FFFFFFFF>「坚忍标记」</color>，使此伤害+1，并且每消耗1点<color=#FFFFFFFF>「坚忍标记」</color>就抓1张牌。",
+    "playingDescription": "所附属角色受到伤害时：如可能，舍弃原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点「坚忍标记」。（每回合2次）\n角色造成伤害时：如果此牌已有「坚忍标记」，则消耗所有「坚忍标记」，使此伤害+1，并且每消耗1点「坚忍标记」就抓1张牌。",
     "shownToken": "GCG_TOKEN_COUNTER",
     "shownIcon": "GCG_TOKEN_ICON_CLOCK",
     "persistEffectType": "GCG_PERSIST_EFFECT_EXPECTO_PATRONUM",
@@ -13466,13 +13453,12 @@
       "GCG_TAG_WEAPON_POLE"
     ],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>如可能，$[K56]原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点<color=#FFFFFFFF>「团结」</color>。（每回合1次）\\n<color=#FFFFFFFF>角色造成伤害时：</color>如果此牌已有<color=#FFFFFFFF>「团结」</color>，则消耗所有<color=#FFFFFFFF>「团结」</color>，使此伤害+1，并且每消耗1点<color=#FFFFFFFF>「团结」</color>就抓1张牌。\\n（<color=#FFFFFFFF>「{SPRITE_PRESET#3204}长柄武器」角色</color>才能装备。角色最多装备1件「{SPRITE_PRESET#3003}武器」）",
-    "description": "所附属角色受到伤害时：如可能，舍弃原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点「团结」。（每回合1次）\n角色造成伤害时：如果此牌已有「团结」，则消耗所有「团结」，使此伤害+1，并且每消耗1点「团结」就抓1张牌。\n（「长柄武器」角色才能装备。角色最多装备1件「武器」）",
-    "rawPlayingDescription": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>如可能，$[K56]原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点<color=#FFFFFFFF>「团结」</color>。（每回合1次）\\n<color=#FFFFFFFF>角色造成伤害时：</color>如果此牌已有<color=#FFFFFFFF>「团结」</color>，则消耗所有<color=#FFFFFFFF>「团结」</color>，使此伤害+1，并且每消耗1点<color=#FFFFFFFF>「团结」</color>就抓1张牌。",
-    "playingDescription": "所附属角色受到伤害时：如可能，舍弃原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点「团结」。（每回合1次）\n角色造成伤害时：如果此牌已有「团结」，则消耗所有「团结」，使此伤害+1，并且每消耗1点「团结」就抓1张牌。",
+    "rawDescription": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>如可能，$[K56]原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点<color=#FFFFFFFF>「团结」</color>。（每回合最多触发2次）\\n<color=#FFFFFFFF>角色使用技能时：</color>如果此牌已有<color=#FFFFFFFF>「团结」</color>，则消耗所有<color=#FFFFFFFF>「团结」</color>，使此技能伤害+1，并且每消耗1点<color=#FFFFFFFF>「团结」</color>就抓1张牌。\\n（<color=#FFFFFFFF>「{SPRITE_PRESET#3204}长柄武器」角色</color>才能装备。角色最多装备1件「{SPRITE_PRESET#3003}武器」）",
+    "description": "所附属角色受到伤害时：如可能，舍弃原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点「团结」。（每回合最多触发2次）\n角色使用技能时：如果此牌已有「团结」，则消耗所有「团结」，使此技能伤害+1，并且每消耗1点「团结」就抓1张牌。\n（「长柄武器」角色才能装备。角色最多装备1件「武器」）",
+    "rawPlayingDescription": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>如可能，$[K56]原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点<color=#FFFFFFFF>「团结」</color>。（每回合最多触发2次）\\n<color=#FFFFFFFF>角色使用技能时：</color>如果此牌已有<color=#FFFFFFFF>「团结」</color>，则消耗所有<color=#FFFFFFFF>「团结」</color>，使此技能伤害+1，并且每消耗1点<color=#FFFFFFFF>「团结」</color>就抓1张牌。",
+    "playingDescription": "所附属角色受到伤害时：如可能，舍弃原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点「团结」。（每回合最多触发2次）\n角色使用技能时：如果此牌已有「团结」，则消耗所有「团结」，使此技能伤害+1，并且每消耗1点「团结」就抓1张牌。",
     "shownToken": "GCG_TOKEN_COUNTER",
     "shownIcon": "GCG_TOKEN_ICON_CLOCK",
-    "persistEffectType": "GCG_PERSIST_EFFECT_EXPECTO_PATRONUM",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Equip_Weapon",
@@ -13642,10 +13628,10 @@
       "GCG_TAG_WEAPON_SWORD"
     ],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>如可能，$[K56]原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点<color=#FFFFFFFF>「团结」</color>。（每回合1次）\\n<color=#FFFFFFFF>角色造成伤害时：</color>如果此牌已有<color=#FFFFFFFF>「团结」</color>，则消耗所有<color=#FFFFFFFF>「团结」</color>，使此伤害+1，并且每消耗1点<color=#FFFFFFFF>「团结」</color>就抓1张牌。\\n（<color=#FFFFFFFF>「{SPRITE_PRESET#3205}单手剑」角色</color>才能装备。角色最多装备1件「{SPRITE_PRESET#3003}武器」）",
-    "description": "所附属角色受到伤害时：如可能，舍弃原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点「团结」。（每回合1次）\n角色造成伤害时：如果此牌已有「团结」，则消耗所有「团结」，使此伤害+1，并且每消耗1点「团结」就抓1张牌。\n（「单手剑」角色才能装备。角色最多装备1件「武器」）",
-    "rawPlayingDescription": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>如可能，$[K56]原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点<color=#FFFFFFFF>「团结」</color>。（每回合1次）\\n<color=#FFFFFFFF>角色造成伤害时：</color>如果此牌已有<color=#FFFFFFFF>「团结」</color>，则消耗所有<color=#FFFFFFFF>「团结」</color>，使此伤害+1，并且每消耗1点<color=#FFFFFFFF>「团结」</color>就抓1张牌。",
-    "playingDescription": "所附属角色受到伤害时：如可能，舍弃原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点「团结」。（每回合1次）\n角色造成伤害时：如果此牌已有「团结」，则消耗所有「团结」，使此伤害+1，并且每消耗1点「团结」就抓1张牌。",
+    "rawDescription": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>如可能，$[K56]原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点<color=#FFFFFFFF>「团结」</color>。（每回合2次）\\n<color=#FFFFFFFF>角色造成伤害时：</color>如果此牌已有<color=#FFFFFFFF>「团结」</color>，则消耗所有<color=#FFFFFFFF>「团结」</color>，使此伤害+1，并且每消耗1点<color=#FFFFFFFF>「团结」</color>就抓1张牌。\\n（<color=#FFFFFFFF>「{SPRITE_PRESET#3205}单手剑」角色</color>才能装备。角色最多装备1件「{SPRITE_PRESET#3003}武器」）",
+    "description": "所附属角色受到伤害时：如可能，舍弃原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点「团结」。（每回合2次）\n角色造成伤害时：如果此牌已有「团结」，则消耗所有「团结」，使此伤害+1，并且每消耗1点「团结」就抓1张牌。\n（「单手剑」角色才能装备。角色最多装备1件「武器」）",
+    "rawPlayingDescription": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>如可能，$[K56]原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点<color=#FFFFFFFF>「团结」</color>。（每回合2次）\\n<color=#FFFFFFFF>角色造成伤害时：</color>如果此牌已有<color=#FFFFFFFF>「团结」</color>，则消耗所有<color=#FFFFFFFF>「团结」</color>，使此伤害+1，并且每消耗1点<color=#FFFFFFFF>「团结」</color>就抓1张牌。",
+    "playingDescription": "所附属角色受到伤害时：如可能，舍弃原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点「团结」。（每回合2次）\n角色造成伤害时：如果此牌已有「团结」，则消耗所有「团结」，使此伤害+1，并且每消耗1点「团结」就抓1张牌。",
     "shownToken": "GCG_TOKEN_COUNTER",
     "shownIcon": "GCG_TOKEN_ICON_CLOCK",
     "persistEffectType": "GCG_PERSIST_EFFECT_EXPECTO_PATRONUM",
@@ -13717,10 +13703,10 @@
       "GCG_TAG_ARTIFACT"
     ],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>敌方角色被击倒后：</color>如果所附属角色为「出战角色」，则生成2个$[K411]。（整场牌局限制3次）\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
-    "description": "敌方角色被击倒后：如果所附属角色为「出战角色」，则生成2个万能元素。（整场牌局限制3次）\n（角色最多装备1件「圣遗物」）",
-    "rawPlayingDescription": "<color=#FFFFFFFF>敌方角色被击倒后：</color>如果所附属角色为「出战角色」，则生成2个$[K411]。（整场牌局限制3次）",
-    "playingDescription": "敌方角色被击倒后：如果所附属角色为「出战角色」，则生成2个万能元素。（整场牌局限制3次）",
+    "rawDescription": "<color=#FFFFFFFF>敌方角色被击倒后：</color>如果所附属角色为「出战角色」，则生成2个$[K411]。\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
+    "description": "敌方角色被击倒后：如果所附属角色为「出战角色」，则生成2个万能元素。\n（角色最多装备1件「圣遗物」）",
+    "rawPlayingDescription": "<color=#FFFFFFFF>敌方角色被击倒后：</color>如果所附属角色为「出战角色」，则生成2个$[K411]。",
+    "playingDescription": "敌方角色被击倒后：如果所附属角色为「出战角色」，则生成2个万能元素。",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Equip_Relic",
@@ -13789,10 +13775,10 @@
       "GCG_TAG_ARTIFACT"
     ],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>其他我方角色使用「元素爆发」后：</color>所附属角色获得1点$[K310]。\\n角色使用「元素爆发」造成的伤害+2。（每回合1次）\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
-    "description": "其他我方角色使用「元素爆发」后：所附属角色获得1点充能。\n角色使用「元素爆发」造成的伤害+2。（每回合1次）\n（角色最多装备1件「圣遗物」）",
-    "rawPlayingDescription": "<color=#FFFFFFFF>其他我方角色使用「元素爆发」后：</color>所附属角色获得1点$[K310]。\\n角色使用「元素爆发」造成的伤害+2。（每回合1次）",
-    "playingDescription": "其他我方角色使用「元素爆发」后：所附属角色获得1点充能。\n角色使用「元素爆发」造成的伤害+2。（每回合1次）",
+    "rawDescription": "<color=#FFFFFFFF>其他我方角色使用「元素爆发」后：</color>所附属角色获得1点$[K310]。\\n角色使用「元素爆发」造成的伤害+2。\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
+    "description": "其他我方角色使用「元素爆发」后：所附属角色获得1点充能。\n角色使用「元素爆发」造成的伤害+2。\n（角色最多装备1件「圣遗物」）",
+    "rawPlayingDescription": "<color=#FFFFFFFF>其他我方角色使用「元素爆发」后：</color>所附属角色获得1点$[K310]。\\n角色使用「元素爆发」造成的伤害+2。",
+    "playingDescription": "其他我方角色使用「元素爆发」后：所附属角色获得1点充能。\n角色使用「元素爆发」造成的伤害+2。",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Equip_Relic",
@@ -13934,10 +13920,10 @@
       "GCG_TAG_ARTIFACT"
     ],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>入场时：</color>治疗所附属角色2点。\\n我方角色每受到3点治疗，此牌就累积1个<color=#FFFFFFFF>「海染泡沫」</color>。（最多累积2个）\\n<color=#FFFFFFFF>角色造成伤害时：</color>消耗所有<color=#FFFFFFFF>「海染泡沫」</color>，每消耗1个都使造成的伤害+1。\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
-    "description": "入场时：治疗所附属角色2点。\n我方角色每受到3点治疗，此牌就累积1个「海染泡沫」。（最多累积2个）\n角色造成伤害时：消耗所有「海染泡沫」，每消耗1个都使造成的伤害+1。\n（角色最多装备1件「圣遗物」）",
-    "rawPlayingDescription": "我方角色每受到3点治疗，此牌就累积1个<color=#FFFFFFFF>「海染泡沫」</color>。（最多累积2个，<color=#D3BC8EFF>当前已受到${[GCG_TOKEN_SHIELD]}点治疗</color>）\\n<color=#FFFFFFFF>角色造成伤害时：</color>消耗所有<color=#FFFFFFFF>「海染泡沫」</color>，每消耗1个都使造成的伤害+1。",
-    "playingDescription": "我方角色每受到3点治疗，此牌就累积1个「海染泡沫」。（最多累积2个，当前已受到${[GCG_TOKEN_SHIELD]}点治疗）\n角色造成伤害时：消耗所有「海染泡沫」，每消耗1个都使造成的伤害+1。",
+    "rawDescription": "<color=#FFFFFFFF>入场时：</color>治疗所附属角色3点。\\n我方角色每受到3点治疗，此牌就累积1个「海染泡沫」。（最多累积2个）\\n<color=#FFFFFFFF>角色造成伤害时：</color>消耗所有「海染泡沫」，每消耗1个都使造成的伤害+1。\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
+    "description": "入场时：治疗所附属角色3点。\n我方角色每受到3点治疗，此牌就累积1个「海染泡沫」。（最多累积2个）\n角色造成伤害时：消耗所有「海染泡沫」，每消耗1个都使造成的伤害+1。\n（角色最多装备1件「圣遗物」）",
+    "rawPlayingDescription": "我方角色每受到3点治疗，此牌就累积1个「海染泡沫」。（最多累积2个）\\n<color=#FFFFFFFF>角色造成伤害时：</color>消耗所有「海染泡沫」，每消耗1个都使造成的伤害+1。",
+    "playingDescription": "我方角色每受到3点治疗，此牌就累积1个「海染泡沫」。（最多累积2个）\n角色造成伤害时：消耗所有「海染泡沫」，每消耗1个都使造成的伤害+1。",
     "shownToken": "GCG_TOKEN_COUNTER",
     "hidden": false,
     "remainAfterDie": false,
@@ -13971,8 +13957,8 @@
       "GCG_TAG_ARTIFACT"
     ],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>入场时：</color>生成1个所附属角色类型的元素骰。如果我方队伍中存在3种不同元素类型的角色，则改为生成2个。\\n<color=#FFFFFFFF>所附属角色为出战角色期间，敌方受到元素反应伤害时：</color>抓1张牌。（每回合至多2次）\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
-    "description": "入场时：生成1个所附属角色类型的元素骰。如果我方队伍中存在3种不同元素类型的角色，则改为生成2个。\n所附属角色为出战角色期间，敌方受到元素反应伤害时：抓1张牌。（每回合至多2次）\n（角色最多装备1件「圣遗物」）",
+    "rawDescription": "<color=#FFFFFFFF>入场时：</color>生成1个所附属角色类型的元素骰。如果我方队伍中存在3种不同元素类型的角色，则额外生成1个$[K411]。\\n<color=#FFFFFFFF>所附属角色为出战角色期间，敌方受到元素反应伤害时：</color>抓1张牌。（每回合至多2次）\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
+    "description": "入场时：生成1个所附属角色类型的元素骰。如果我方队伍中存在3种不同元素类型的角色，则额外生成1个万能元素。\n所附属角色为出战角色期间，敌方受到元素反应伤害时：抓1张牌。（每回合至多2次）\n（角色最多装备1件「圣遗物」）",
     "rawPlayingDescription": "<color=#FFFFFFFF>所附属角色为出战角色期间，敌方受到元素反应伤害时：</color>抓1张牌。（每回合至多2次）",
     "playingDescription": "所附属角色为出战角色期间，敌方受到元素反应伤害时：抓1张牌。（每回合至多2次）",
     "hidden": false,
@@ -14043,10 +14029,10 @@
       "GCG_TAG_ARTIFACT"
     ],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>角色受到伤害后：</color>如果所附属角色为「出战角色」，则抓1张牌，并且在本回合结束阶段中治疗所附属角色1点。（每回合1次）\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
-    "description": "角色受到伤害后：如果所附属角色为「出战角色」，则抓1张牌，并且在本回合结束阶段中治疗所附属角色1点。（每回合1次）\n（角色最多装备1件「圣遗物」）",
-    "rawPlayingDescription": "<color=#FFFFFFFF>角色受到伤害后：</color>如果所附属角色为「出战角色」，则抓1张牌，并且在本回合结束阶段中治疗所附属角色1点。（每回合1次）",
-    "playingDescription": "角色受到伤害后：如果所附属角色为「出战角色」，则抓1张牌，并且在本回合结束阶段中治疗所附属角色1点。（每回合1次）",
+    "rawDescription": "<color=#FFFFFFFF>角色受到伤害后：</color>如果所附属角色为「出战角色」，则抓1张牌。（每回合1次）\\n<color=#FFFFFFFF>结束阶段：</color>治疗所附属角色1点。\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
+    "description": "角色受到伤害后：如果所附属角色为「出战角色」，则抓1张牌。（每回合1次）\n结束阶段：治疗所附属角色1点。\n（角色最多装备1件「圣遗物」）",
+    "rawPlayingDescription": "<color=#FFFFFFFF>角色受到伤害后：</color>如果所附属角色为「出战角色」，则抓1张牌。（每回合1次）\\n<color=#FFFFFFFF>结束阶段：</color>治疗所附属角色1点。",
+    "playingDescription": "角色受到伤害后：如果所附属角色为「出战角色」，则抓1张牌。（每回合1次）\n结束阶段：治疗所附属角色1点。",
     "hidden": false,
     "remainAfterDie": false,
     "buffIcon": "UI_Gcg_Buff_Equip_Relic",
@@ -14625,8 +14611,8 @@
         "name": "钩物巧技",
         "englishName": "Artful Grapple",
         "type": "GCG_SKILL_TAG_VEHICLE",
-        "rawDescription": "造成1点$[K100]，窃取1张原本元素骰费用最高的对方手牌，然后对手抓1张牌。\\n如果我方手牌数不多于2，此特技少花费1个元素骰。",
-        "description": "造成1点物理伤害，窃取1张原本元素骰费用最高的对方手牌，然后对手抓1张牌。\n如果我方手牌数不多于2，此特技少花费1个元素骰。",
+        "rawDescription": "造成1点$[K100]，窃取1张原本元素骰费用最高的对方手牌。\\n如果我方手牌数不多于2，此特技少花费1个元素骰。",
+        "description": "造成1点物理伤害，窃取1张原本元素骰费用最高的对方手牌。\n如果我方手牌数不多于2，此特技少花费1个元素骰。",
         "playCost": [
           {
             "type": "GCG_COST_DICE_SAME",
@@ -14651,7 +14637,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": false
+        "hidden": false,
+        "keyMap": {}
       }
     ],
     "rawDescription": "$[K58]：$[S3130021]\\n<color=#FFFFFFFF>$[K3]：2</color>\\n（角色最多装备1个「{SPRITE_PRESET#3008}特技」）",
@@ -14711,7 +14698,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": true
+        "hidden": true,
+        "keyMap": {}
       }
     ],
     "rawDescription": "$[K58]：$[S3130031]\\n<color=#FFFFFFFF>$[K3]：2</color>\\n（角色最多装备1个「{SPRITE_PRESET#3008}特技」）",
@@ -14850,7 +14838,8 @@
             "hintText": "对我方出战角色生效"
           }
         ],
-        "hidden": false
+        "hidden": false,
+        "keyMap": {}
       },
       {
         "id": 3130062,
@@ -14870,7 +14859,8 @@
             "hintText": "对我方出战角色生效"
           }
         ],
-        "hidden": false
+        "hidden": false,
+        "keyMap": {}
       },
       {
         "id": 3130063,
@@ -14964,7 +14954,8 @@
         "description": "使用时，生成2点护盾",
         "playCost": [],
         "targetList": [],
-        "hidden": false
+        "hidden": false,
+        "keyMap": {}
       }
     ],
     "rawDescription": "<color=#FFFFFFFF>入场时：</color>为我方附属角色提供<color=#FFFFFFFF>2点$[K6]</color>。\\n<color=#FFFFFFFF>附属角色切换至后台时：</color>此牌$[K3]+1。\\n$[K58]：$[S3130071]\\n<color=#FFFFFFFF>$[K3]：2</color>\\n（角色最多装备1个「{SPRITE_PRESET#3008}特技」）",
@@ -15045,7 +15036,8 @@
         "description": "",
         "playCost": [],
         "targetList": [],
-        "hidden": false
+        "hidden": false,
+        "keyMap": {}
       },
       {
         "id": 3130092,
@@ -15859,8 +15851,8 @@
       "GCG_TAG_ALLY"
     ],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>我方打出「{SPRITE_PRESET#3004}圣遗物」手牌时：</color>少花费1个元素骰；如果我方场上已有2个已装备「{SPRITE_PRESET#3004}圣遗物」的角色，就额外少花费1个元素骰。（每回合1次）",
-    "description": "我方打出「圣遗物」手牌时：少花费1个元素骰；如果我方场上已有2个已装备「圣遗物」的角色，就额外少花费1个元素骰。（每回合1次）",
+    "rawDescription": "<color=#FFFFFFFF>我方打出「{SPRITE_PRESET#3004}圣遗物」手牌时：</color>少花费1个元素骰；我方场上每有一个已装备「{SPRITE_PRESET#3004}圣遗物」的角色，就额外少花费1个元素骰。（每回合1次）",
+    "description": "我方打出「圣遗物」手牌时：少花费1个元素骰；我方场上每有一个已装备「圣遗物」的角色，就额外少花费1个元素骰。（每回合1次）",
     "hidden": false,
     "remainAfterDie": false
   },
@@ -15889,10 +15881,8 @@
       "GCG_TAG_ALLY"
     ],
     "skills": [],
-    "rawDescription": "此牌会记录本场对局中我方支援区弃置卡牌的数量，称为<color=#FFFFFFFF>「阅历」</color>。（最多6点）\\n<color=#FFFFFFFF>我方角色使用「元素爆发」后：</color>如果<color=#FFFFFFFF>「阅历」</color>至少为6，则弃置此牌，对我方出战角色附属$[K1028]。",
-    "description": "此牌会记录本场对局中我方支援区弃置卡牌的数量，称为「阅历」。（最多6点）\n我方角色使用「元素爆发」后：如果「阅历」至少为6，则弃置此牌，对我方出战角色附属沙与梦。",
-    "rawPlayingDescription": "此牌会记录本场对局中我方支援区弃置卡牌的数量，称为<color=#FFFFFFFF>「阅历」</color>。（最多6点，<color=#D3BC8EFF>当前为${[GCG_TOKEN_COUNTER]}点</color>）\\n<color=#FFFFFFFF>我方角色使用「元素爆发」后：</color>如果<color=#FFFFFFFF>「阅历」</color>至少为6，则弃置此牌，对我方出战角色附属$[K1028]。",
-    "playingDescription": "此牌会记录本场对局中我方支援区弃置卡牌的数量，称为「阅历」。（最多6点，当前为${[GCG_TOKEN_COUNTER]}点）\n我方角色使用「元素爆发」后：如果「阅历」至少为6，则弃置此牌，对我方出战角色附属沙与梦。",
+    "rawDescription": "此牌会记录本场对局中我方支援区弃置卡牌的数量，称为「阅历」。（最多6点）\\n<color=#FFFFFFFF>我方角色使用「元素爆发」后：</color>如果「阅历」至少为5，则弃置此牌，生成<color=#FFFFFFFF>「阅历」-2</color>数量的$[K411]。",
+    "description": "此牌会记录本场对局中我方支援区弃置卡牌的数量，称为「阅历」。（最多6点）\n我方角色使用「元素爆发」后：如果「阅历」至少为5，则弃置此牌，生成「阅历」-2数量的万能元素。",
     "shownToken": "GCG_TOKEN_COUNTER",
     "shownIcon": "GCG_TOKEN_ICON_CLOCK",
     "hidden": false,
@@ -16095,8 +16085,8 @@
       "GCG_TAG_ITEM"
     ],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>我方打出原本元素骰费用至少为2的支援牌时：</color>少花费1个元素骰。（每回合1次）\\n<color=#FFFFFFFF>$[K3]：2</color>",
-    "description": "我方打出原本元素骰费用至少为2的支援牌时：少花费1个元素骰。（每回合1次）\n可用次数：2",
+    "rawDescription": "<color=#FFFFFFFF>我方打出原本元素骰费用为1的装备或支援牌时：</color>少花费1个元素骰。（每回合1次）\\n<color=#FFFFFFFF>$[K3]：2</color>",
+    "description": "我方打出原本元素骰费用为1的装备或支援牌时：少花费1个元素骰。（每回合1次）\n可用次数：2",
     "shownToken": "GCG_TOKEN_LIFE",
     "shownIcon": "GCG_TOKEN_ICON_CLOCK",
     "hidden": false,
@@ -16127,10 +16117,8 @@
       "GCG_TAG_ITEM"
     ],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>我方打出行动牌后：</color>如果此牌在场期间本回合中我方已打出3张行动牌，则抓1张牌并生成1个$[K411]。（每回合1次）\\n<color=#FFFFFFFF>$[K3]：3</color>",
-    "description": "我方打出行动牌后：如果此牌在场期间本回合中我方已打出3张行动牌，则抓1张牌并生成1个万能元素。（每回合1次）\n可用次数：3",
-    "rawPlayingDescription": "<color=#FFFFFFFF>我方打出行动牌后：</color>如果此牌在场期间本回合中我方已打出3张行动牌，则抓1张牌并生成1个$[K411]。（每回合1次，<color=#D3BC8EFF>当前已打出${[GCG_TOKEN_COUNTER]}张</color>）\\n<color=#FFFFFFFF>$[K3]：3</color>",
-    "playingDescription": "我方打出行动牌后：如果此牌在场期间本回合中我方已打出3张行动牌，则抓1张牌并生成1个万能元素。（每回合1次，当前已打出${[GCG_TOKEN_COUNTER]}张）\n可用次数：3",
+    "rawDescription": "<color=#FFFFFFFF>我方打出行动牌后：</color>如果此牌在场期间本回合中我方已打出3张行动牌，则抓1张牌并生成1个万能元素骰。（每回合1次）\\n<color=#FFFFFFFF>$[K3]：3</color>",
+    "description": "我方打出行动牌后：如果此牌在场期间本回合中我方已打出3张行动牌，则抓1张牌并生成1个万能元素骰。（每回合1次）\n可用次数：3",
     "shownToken": "GCG_TOKEN_LIFE",
     "shownIcon": "GCG_TOKEN_ICON_CLOCK",
     "hidden": false,
@@ -16145,8 +16133,8 @@
       "GCG_TAG_ITEM"
     ],
     "skills": [],
-    "rawDescription": "<color=#FFFFFFFF>行动阶段开始时：</color>$[K56]最多2张原本元素骰费用最高的手牌，每$[K56]1张，此牌就累积1点<color=#FFFFFFFF>「记忆和梦」</color>。（最多2点）\\n<color=#FFFFFFFF>我方角色使用技能时：</color>如果我方本回合未打出过行动牌，则消耗1点<color=#FFFFFFFF>「记忆和梦」</color>，以使此技能少花费1个元素骰。",
-    "description": "行动阶段开始时：舍弃最多2张原本元素骰费用最高的手牌，每舍弃1张，此牌就累积1点「记忆和梦」。（最多2点）\n我方角色使用技能时：如果我方本回合未打出过行动牌，则消耗1点「记忆和梦」，以使此技能少花费1个元素骰。",
+    "rawDescription": "<color=#FFFFFFFF>行动阶段开始时：</color>$[K56]最多2张元素骰费用最高的手牌，每$[K56]1张，此牌就累积1点<color=#FFFFFFFF>「记忆和梦」</color>。（最多2点）\\n<color=#FFFFFFFF>我方角色使用技能时：</color>如果我方本回合未打出过行动牌，则消耗1点<color=#FFFFFFFF>「记忆和梦」</color>，以使此技能少花费1个元素骰。",
+    "description": "行动阶段开始时：舍弃最多2张元素骰费用最高的手牌，每舍弃1张，此牌就累积1点「记忆和梦」。（最多2点）\n我方角色使用技能时：如果我方本回合未打出过行动牌，则消耗1点「记忆和梦」，以使此技能少花费1个元素骰。",
     "shownToken": "GCG_TOKEN_COUNTER",
     "shownIcon": "GCG_TOKEN_ICON_CLOCK",
     "hidden": false,
