@@ -48,12 +48,7 @@ export function Footer() {
       </div>
       <Show when={versionInfo()}>
         <div>
-          游戏版本{" "}
-          {IS_BETA ? (
-            <span class="text-red-300">最新测试版</span>
-          ) : (
-            versionInfo().currentGameVersion
-          )}
+          游戏版本 [摸鱼杯S7特别版本]
         </div>
         <div>
           模拟器版本 {versionInfo().coreVersion} (

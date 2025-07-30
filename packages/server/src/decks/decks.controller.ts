@@ -80,12 +80,6 @@ export class UpdateDeckDto {
 }
 
 export class QueryDeckDto extends PaginationDto {
-  @IsInt()
-  @Min(0)
-  @Max(VERSIONS.length - 1)
-  @IsOptional()
-  @Transform(parseStringToInt)
-  requiredVersion?: number;
 }
 
 @Controller("decks")

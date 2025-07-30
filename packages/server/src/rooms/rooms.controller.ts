@@ -51,12 +51,6 @@ export class CreateRoomDto {
   @IsOptional()
   hostFirst?: boolean;
 
-  @IsInt()
-  @Min(0)
-  @Max(VERSIONS.length - 1)
-  @IsOptional()
-  gameVersion?: number;
-
   @IsNumber()
   @IsOptional()
   @Min(0)

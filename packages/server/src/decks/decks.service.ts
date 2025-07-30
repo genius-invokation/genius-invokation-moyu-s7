@@ -79,16 +79,13 @@ export class DecksService {
 
   async getAllDecks(
     userId: number,
-    { skip = 0, take = 100, requiredVersion }: QueryDeckDto,
+    { skip = 0, take = 100 }: QueryDeckDto,
   ): Promise<PaginationResult<DeckWithDeckModel>> {
     const [models, count] = await this.prisma.deck.findManyAndCount({
       skip,
       take,
       where: {
         ownerUserId: userId,
-        requiredVersion: {
-          lte: requiredVersion,
-        }
       },
     });
     const data = models.map((model) => {

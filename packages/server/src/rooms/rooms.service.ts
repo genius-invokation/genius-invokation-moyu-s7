@@ -35,10 +35,12 @@ import {
   VERSIONS,
   RpcResponse,
   CURRENT_VERSION,
+  resolveManuallySelectedOfficialVersion,
   type Version,
 } from "@gi-tcg/core";
 import { dispatchRpc } from "@gi-tcg/typings";
-import getData from "@gi-tcg/data";
+import { registry } from "@gi-tcg/data";
+import moyuS7Versions from "./moyu_s7_versions.json";
 import { type Deck, flip } from "@gi-tcg/utils";
 import {
   BehaviorSubject,
@@ -75,7 +77,6 @@ interface RoomConfig extends Partial<GameConfig> {
   watchable: boolean; // defaults true
   private: boolean; // defaults false
   allowGuest: boolean; // defaults true
-  gameVersion: Version; // defaults latest
 }
 
 interface CreateRoomConfig extends RoomConfig {
@@ -484,7 +485,7 @@ class Room {
     player1.setTimeoutConfig(this.config);
     const state = InternalGame.createInitialState({
       decks: [player0.playerInfo.deck, player1.playerInfo.deck],
-      data: getData(this.config.gameVersion),
+      data: registry.resolve(resolveManuallySelectedOfficialVersion(moyuS7Versions as Record<number, Version>)),
     });
     const game = new InternalGame(state);
     game.onPause = async (state, mutations, canResume) => {
@@ -517,7 +518,6 @@ class Room {
           player1.onError(e);
           sendDebugLog("gameErrorLog", {
             em: e.message,
-            gv: this.config.gameVersion,
             ...serializeGameStateLog(this.stateLog),
           });
         } else {
@@ -555,7 +555,6 @@ class Room {
   getStateLog() {
     return {
       ...serializeGameStateLog(this.stateLog),
-      gv: this.config.gameVersion,
     };
   }
 
@@ -676,10 +675,6 @@ export class RoomsService {
     const roomConfig: CreateRoomConfig = {
       hostWho,
       randomSeed: params.randomSeed,
-      gameVersion:
-        typeof params.gameVersion === "number"
-          ? VERSIONS[params.gameVersion]!
-          : CURRENT_VERSION,
       initTotalActionTime: params.initTotalActionTime ?? 45,
       rerollTime: params.rerollTime ?? 40,
       roundTotalActionTime: params.roundTotalActionTime ?? 60,
@@ -690,12 +685,7 @@ export class RoomsService {
     };
 
     try {
-      const version = verifyDeck(playerInfo.deck);
-      if (semver.order(version, roomConfig.gameVersion) > 0) {
-        throw new BadRequestException(
-          `Deck version required ${version}, it's higher game version ${roomConfig.gameVersion}`,
-        );
-      }
+      verifyDeck(playerInfo.deck);
     } catch (e) {
       if (e instanceof DeckVerificationError) {
         throw new BadRequestException(`Deck verification failed: ${e.message}`);
@@ -811,12 +801,7 @@ export class RoomsService {
     }
 
     try {
-      const version = verifyDeck(playerInfo.deck);
-      if (semver.order(version, room.config.gameVersion) > 0) {
-        throw new BadRequestException(
-          `Deck version required ${version}, it's higher game version ${room.config.gameVersion}`,
-        );
-      }
+      verifyDeck(playerInfo.deck);
     } catch (e) {
       if (e instanceof DeckVerificationError) {
         throw new BadRequestException(`Deck verification failed: ${e.message}`);
@@ -842,7 +827,7 @@ export class RoomsService {
       const winnerId = winnerWho === null ? null : playerIds[winnerWho]!;
       this.games.addGame({
         coreVersion: Room.CORE_VERSION,
-        gameVersion: room.config.gameVersion,
+        gameVersion: CURRENT_VERSION,
         data: JSON.stringify(room.getStateLog()),
         winnerId,
         playerIds,

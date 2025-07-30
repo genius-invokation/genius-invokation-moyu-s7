@@ -141,8 +141,6 @@ export function RoomDialog(props: RoomDialogProps) {
   const closeDialog = () => {
     dialogEl.close();
   };
-  const { versionInfo } = useVersionContext();
-  const [version, setVersion] = createSignal(-1);
   const [timeConfig, setTimeConfig] = createSignal(TIME_CONFIGS[1]);
   const [isPublic, setIsPublic] = createSignal(true);
   const [watchable, setWatchable] = createSignal(true);
@@ -152,26 +150,16 @@ export function RoomDialog(props: RoomDialogProps) {
   const [selectedDeck, setSelectedDeck] = createSignal<number | null>(null);
   const [entering, setEntering] = createSignal(false);
 
-  createEffect(() => {
-    const versions = versionInfo()?.supportedGameVersions ?? [];
-    if (props.joiningRoomInfo?.config.gameVersion) {
-      const ver = versions.indexOf(props.joiningRoomInfo.config.gameVersion);
-      setVersion(ver);
-    } else {
-      setVersion(versions.length - 1);
-    }
-  });
-
-  const updateAvailableDecks = async (version: number) => {
+  const updateAvailableDecks = async () => {
     setLoadingDecks(true);
     const { type } = status();
     try {
       if (type === "user") {
-        const { data } = await axios.get(`decks?requiredVersion=${version}`);
+        const { data } = await axios.get(`decks`);
         setAvailableDecks(data.data);
       } else if (type === "guest") {
         setAvailableDecks(
-          guestDecks().filter((deck) => deck.requiredVersion <= version),
+          guestDecks(),
         );
       }
     } catch (e) {
@@ -189,10 +177,7 @@ export function RoomDialog(props: RoomDialogProps) {
   };
 
   createEffect(() => {
-    const ver = version();
-    if (ver >= 0) {
-      updateAvailableDecks(ver);
-    }
+    updateAvailableDecks();
   });
 
   const enterRoom = async () => {
@@ -204,7 +189,6 @@ export function RoomDialog(props: RoomDialogProps) {
       let response;
       if (typeof roomId === "undefined") {
         const payload: any = {
-          gameVersion: version(),
           ...timeConfig(),
           private: !isPublic(),
           watchable: watchable(),
@@ -272,19 +256,10 @@ export function RoomDialog(props: RoomDialogProps) {
             class="flex flex-col w-80 md:data-[editable=true]:w-130"
             data-editable={editable()}
           >
-            <Show when={versionInfo()}>
+            <Show when={true}>
               <div class="mb-3 flex flex-row gap-4 items-center">
                 <h4 class="text-lg">游戏版本</h4>
-                <select
-                  class="disabled:pointer-events-none appearance-none"
-                  value={version()}
-                  onChange={(e) => setVersion(Number(e.target.value))}
-                  disabled={!editable()}
-                >
-                  <For each={versionInfo()?.supportedGameVersions ?? []}>
-                    {(version, idx) => <option value={idx()}>{version}</option>}
-                  </For>
-                </select>
+                <input disabled value="摸鱼杯S7特别版本" />
               </div>
               <h4 class="text-lg mb-3">思考时间</h4>
               <div

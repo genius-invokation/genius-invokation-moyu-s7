@@ -26,7 +26,6 @@ export interface DeckInfo extends Deck {
   id: number;
   name: string;
   code: string;
-  requiredVersion: number;
 }
 
 interface DecksResponse {
