@@ -17,6 +17,7 @@ import {
   Body,
   Controller,
   Delete,
+  ForbiddenException,
   Get,
   HttpCode,
   HttpStatus,
@@ -82,6 +83,8 @@ export class UpdateDeckDto {
 export class QueryDeckDto extends PaginationDto {
 }
 
+const MODIFY_FORBIDDEN = false;
+
 @Controller("decks")
 export class DecksController {
   constructor(private decks: DecksService) {}
@@ -89,6 +92,9 @@ export class DecksController {
   @HttpCode(HttpStatus.CREATED)
   @Post()
   async createDeck(@User() userId: number, @Body() deck: CreateDeckDto) {
+    if (MODIFY_FORBIDDEN) {
+      throw new ForbiddenException(`比赛期间不允许修改牌组！`);
+    }
     const result = await this.decks.createDeck(userId, deck);
     return {
       id: result.id,
@@ -126,6 +132,9 @@ export class DecksController {
     @Param("deckId", ParseIntPipe) deckId: number,
     @Body() deck: UpdateDeckDto,
   ) {
+    if (MODIFY_FORBIDDEN) {
+      throw new ForbiddenException(`比赛期间不允许修改牌组！`);
+    }
     return await this.decks.updateDeck(userId, deckId, deck);
   }
 
@@ -134,6 +143,9 @@ export class DecksController {
     @User() userId: number,
     @Param("deckId", ParseIntPipe) deckId: number,
   ) {
+    if (MODIFY_FORBIDDEN) {
+      throw new ForbiddenException(`比赛期间不允许修改牌组！`);
+    }
     await this.decks.deleteDeck(userId, deckId);
     return { message: `deck ${deckId} deleted` };
   }
