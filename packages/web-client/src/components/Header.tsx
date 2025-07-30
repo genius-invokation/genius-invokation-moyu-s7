@@ -42,6 +42,9 @@ export function Header() {
               Incl. unreleased data
             </span>
           </Show>
+          <span class="text-10px badge badge-soft-primary">
+            摸鱼杯S7特别版本
+          </span>
         </div>
       </div>
       <Show when={status().type !== "notLogin"}>
