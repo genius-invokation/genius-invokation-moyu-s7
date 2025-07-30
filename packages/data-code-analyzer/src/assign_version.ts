@@ -59,6 +59,6 @@ const assignResult = assignVersion(CURRENT_VERSION, MOYU_S7_VERSIONS);
 assignResult["$base"] = CURRENT_VERSION;
 
 await Bun.write(
-  `${import.meta.dirname}/../dist/moyu_s7_versions.json`,
+  `${import.meta.dirname}/../../server/src/rooms/moyu_s7_versions.json`,
   JSON.stringify(assignResult, null, 2),
 );

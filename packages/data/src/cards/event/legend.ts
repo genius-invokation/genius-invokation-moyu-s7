@@ -114,7 +114,7 @@ export const InEveryHouseAStove = card(330005)
         c.drawCards(1, { withTag: "talent" });
       }
     } else {
-      const count = Math.min(c.roundNumber - 1, 4);
+      const count = Math.min(c.roundNumber, 4);
       c.drawCards(count);
     }
   })
