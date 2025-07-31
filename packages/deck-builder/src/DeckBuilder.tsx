@@ -136,7 +136,7 @@ export function DeckBuilder(props: DeckBuilderProps) {
               {(deckData) => (
                 <AllCards
                   version={version()}
-                  versionSpecified={versionSpecified()}
+                  versionSpecified={true}
                   deck={props.deck ?? EMPTY_DECK}
                   onChangeDeck={props.onChangeDeck}
                   onSetVersion={setVersion}
