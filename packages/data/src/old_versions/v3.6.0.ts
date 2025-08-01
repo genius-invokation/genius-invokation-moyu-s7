@@ -48,7 +48,7 @@ const CelestialShower = skill(11014)
   .costCryo(3)
   .costEnergy(2)
   .damage(DamageType.Piercing, 1, "opp standby")
-  .damage(DamageType.Cryo, 1)
+  .damage(DamageType.Cryo, 2)
   .summon(SacredCryoPearl)
   .done();
 
@@ -61,7 +61,7 @@ const CelestialShower = skill(11014)
 const Ganyu = character(1101)
   .until("v3.6.0")
   .tags("cryo", "bow", "liyue")
-  .health(10)
+  .health(12)
   .energy(2)
   .skills(LiutianArchery, TrailOfTheQilin, FrostflakeArrow, CelestialShower)
   .done();
