@@ -331,17 +331,6 @@ export function RoomDialog(props: RoomDialogProps) {
                   />
                 </div>
               </Show>
-              <Show when={editable() ? allowGuest() : guestInfo()}>
-                <div class="mb-3 alert alert-border-warning">
-                  <p class="alert-description break-all">
-                    有游客参与的对局记录将不会保存。如果您希望将对局中遇到的问题反馈给开发者，建议您
-                    {editable() && !guestInfo()
-                      ? "关闭“允许游客加入”"
-                      : "使用 GitHub 登录"}
-                    。
-                  </p>
-                </div>
-              </Show>
             </Show>
           </div>
           <div class="b-r-gray-200 b-1" />
