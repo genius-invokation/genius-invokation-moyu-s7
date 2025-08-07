@@ -31,7 +31,7 @@ export class AppController {
     return {
       revision: latest,
       supportedGameVersions: VERSIONS,
-      currentGameVersion: CURRENT_VERSION,
+      currentGameVersion: `${CURRENT_VERSION}+20250807-0`,
       coreVersion: CORE_VERSION,
     };
   }
