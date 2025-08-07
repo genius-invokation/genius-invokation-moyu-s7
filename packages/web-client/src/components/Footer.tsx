@@ -47,9 +47,7 @@ export function Footer() {
         </a>
       </div>
       <Show when={versionInfo()}>
-        <div>
-          游戏版本 [摸鱼杯S7特别版本]
-        </div>
+        <div>游戏版本 [摸鱼杯S7特别版本]</div>
         <div>
           模拟器版本 {versionInfo().coreVersion} (
           <a
@@ -72,6 +70,11 @@ export function Footer() {
           target="_blank"
         >
           点击加入用户QQ群
+        </a>
+      </div>
+      <div>
+        <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener">
+          皖ICP备2025094024号-1
         </a>
       </div>
     </footer>
