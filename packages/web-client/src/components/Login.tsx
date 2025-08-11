@@ -24,11 +24,10 @@ export function Login() {
   const { loginGuest, refresh } = useAuth();
 
   const showGuestHint = () => {
-    window.alert(`在游客模式下：
+    window.alert(`报名结束后，我们将向参赛选手分发比赛账号；比赛账号只能使用报名时填写的单套牌组。
+您可以使用游客模式进行练习和测试；在游客模式下：
 - 您的牌组将保存在本地，不会在云端同步；
-- 您的对局记录将不会在任何地方保存。
-
-如果您希望将对局中的 bug 反馈给开发者，那么强烈建议您使用 GitHub 登录以便我们在数据库中查询对局记录。`);
+- 您的对局记录将不会在任何地方保存。`);
   };
 
   const [loginFormValid, setLoginFormValid] = createSignal(false);
