@@ -361,7 +361,7 @@ const OrnateKabuto = card(312007)
  */
 const EmblemOfSeveredFate = card(312008)
   .until("v3.8.0")
-  .costVoid(3)
+  .costSame(2)
   .artifact()
   .on("useSkill", (c, e) => e.skill.caller.id !== c.self.master.id && e.isSkillType("burst"))
   .listenToPlayer()
