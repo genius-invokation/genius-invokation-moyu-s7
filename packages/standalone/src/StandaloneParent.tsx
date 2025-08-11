@@ -13,7 +13,7 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import getData from "@gi-tcg/data";
+import getData, { registry } from "@gi-tcg/data";
 import {
   DetailLogEntry,
   Game,
@@ -21,6 +21,7 @@ import {
   GameStateLogEntry,
   Version,
   exposeState,
+  resolveManuallySelectedOfficialVersion,
   serializeGameStateLog,
 } from "@gi-tcg/core";
 
@@ -33,6 +34,8 @@ import "@gi-tcg/web-ui-core/style.css";
 import { For, Show, createSignal, onCleanup, onMount } from "solid-js";
 import { decode as decodeShareCode } from "@gi-tcg/utils";
 import { DetailLogViewer } from "@gi-tcg/detail-log-viewer";
+
+import moyuS7Versions from "../../server/src/rooms/moyu_s7_versions.json";
 
 export interface StandaloneParentProps {
   logs?: GameStateLogEntry[];
@@ -195,7 +198,7 @@ export function StandaloneParent(props: StandaloneParentProps) {
       const deck1 = decodeShareCode(props.deck1);
       state = Game.createInitialState({
         decks: [deck0, deck1],
-        data: getData(props.version),
+        data: registry.resolve(resolveManuallySelectedOfficialVersion(moyuS7Versions as Record<number, Version>)),
       });
     }
     const game = new Game(state);
