@@ -895,7 +895,7 @@ export class RoomsService {
     if (!playerUserIds.includes(watchingPlayerId)) {
       throw new NotFoundException(`Player ${watchingPlayerId} not in room`);
     }
-    if (!room.config.watchable && visitorPlayerId !== watchingPlayerId) {
+    if (!room.config.watchable && visitorPlayerId !== 0 && visitorPlayerId !== watchingPlayerId) {
       throw new UnauthorizedException(
         `Room ${roomId} cannot be watched by other`,
       );

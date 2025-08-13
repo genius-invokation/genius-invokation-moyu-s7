@@ -143,8 +143,8 @@ export function RoomDialog(props: RoomDialogProps) {
   };
   const [timeConfig, setTimeConfig] = createSignal(TIME_CONFIGS[1]);
   const [isPublic, setIsPublic] = createSignal(true);
-  const [watchable, setWatchable] = createSignal(true);
-  const [allowGuest, setAllowGuest] = createSignal(true);
+  const [watchable, setWatchable] = createSignal(false);
+  const [allowGuest, setAllowGuest] = createSignal(false);
   const [availableDecks, setAvailableDecks] = createSignal<DeckInfoProps[]>([]);
   const [loadingDecks, setLoadingDecks] = createSignal(true);
   const [selectedDeck, setSelectedDeck] = createSignal<number | null>(null);
@@ -178,6 +178,13 @@ export function RoomDialog(props: RoomDialogProps) {
 
   createEffect(() => {
     updateAvailableDecks();
+  });
+
+  createEffect(() => {
+    if (guestInfo()) {
+      setWatchable(true);
+      setAllowGuest(true);
+    }
   });
 
   const enterRoom = async () => {
