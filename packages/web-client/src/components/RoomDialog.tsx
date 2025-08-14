@@ -108,7 +108,7 @@ const TIME_CONFIGS: TimeConfig[] = [
   {
     name: "双倍",
     estimationTime: 10,
-    initTotalActionTime: 20,
+    initTotalActionTime: 60,
     rerollTime: 60,
     roundTotalActionTime: 180,
     actionTime: 45,
@@ -141,8 +141,8 @@ export function RoomDialog(props: RoomDialogProps) {
   const closeDialog = () => {
     dialogEl.close();
   };
-  const [timeConfig, setTimeConfig] = createSignal(TIME_CONFIGS[1]);
-  const [isPublic, setIsPublic] = createSignal(true);
+  const [timeConfig, setTimeConfig] = createSignal(TIME_CONFIGS[2]);
+  const [isPublic, setIsPublic] = createSignal(false);
   const [watchable, setWatchable] = createSignal(false);
   const [allowGuest, setAllowGuest] = createSignal(false);
   const [availableDecks, setAvailableDecks] = createSignal<DeckInfoProps[]>([]);
@@ -182,6 +182,7 @@ export function RoomDialog(props: RoomDialogProps) {
 
   createEffect(() => {
     if (guestInfo()) {
+      setIsPublic(true);
       setWatchable(true);
       setAllowGuest(true);
     }
@@ -316,7 +317,7 @@ export function RoomDialog(props: RoomDialogProps) {
                       : isPublic()
                   }
                   onChange={(e) => setIsPublic(e.target.checked)}
-                  disabled={!editable()}
+                  disabled={!editable() || !guestInfo()}
                 />
               </div>
               <div class="mb-3 flex flex-row gap-4 items-center">
@@ -326,7 +327,7 @@ export function RoomDialog(props: RoomDialogProps) {
                     props.joiningRoomInfo?.config.watchable ?? watchable()
                   }
                   onChange={(e) => setWatchable(e.target.checked)}
-                  disabled={!editable()}
+                  disabled={!editable() || !guestInfo()}
                 />
               </div>
               <Show when={editable() && !guestInfo()}>
@@ -335,6 +336,7 @@ export function RoomDialog(props: RoomDialogProps) {
                   <ToggleSwitch
                     checked={allowGuest()}
                     onChange={(e) => setAllowGuest(e.target.checked)}
+                    disabled={!guestInfo()}
                   />
                 </div>
               </Show>

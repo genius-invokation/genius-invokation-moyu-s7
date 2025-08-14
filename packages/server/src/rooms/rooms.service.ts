@@ -626,6 +626,9 @@ export class RoomsService {
     if (this.currentRoom(userId) !== null) {
       throw new ConflictException(`User ${userId} is already in a room`);
     }
+    if (params.watchable) {
+      throw new ConflictException(`比赛选手不允许设置可观战房间`);
+    }
     const deck = await this.decks.getDeck(userId, params.hostDeckId);
     if (deck === null) {
       throw new NotFoundException(`Deck ${params.hostDeckId} not found`);
