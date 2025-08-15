@@ -46,6 +46,7 @@ import { useMobile } from "../App";
 import { Dynamic } from "solid-js/web";
 import { MobileChessboardLayout } from "../layouts/MobileChessboardLayout";
 import { CancellablePlayerIO } from "@gi-tcg/core";
+import { useAuth } from "../auth";
 
 interface InitializedPayload {
   who: 0 | 1;
@@ -167,6 +168,7 @@ const createReconnectSse = <T,>(
 export default function Room() {
   const params = useParams();
   const [searchParams, setSearchParams] = useSearchParams();
+  const { status } = useAuth();
   const checkboxId = createUniqueId();
   const navigate = useNavigate();
   const code = params.code;
@@ -425,6 +427,12 @@ export default function Room() {
     } else {
       abortOppNotification();
       playerIo()?.oppController.close();
+    }
+  });
+
+  createEffect(() => {
+    if (status().id === 0 && initialized()) {
+      setShowOpp(true);
     }
   });
 

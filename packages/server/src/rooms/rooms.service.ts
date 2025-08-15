@@ -413,6 +413,22 @@ function sendDebugLog(name: string, message: any) {
   }
 }
 
+function notifyRoom(
+  roomInfo: RoomInfo,
+  kind: "create" | "start" | "stop",
+  extra: object = {},
+) {
+  if (!roomInfo.config.allowGuest && import.meta.env.ROOM_NOTIFY_URL) {
+    fetch(import.meta.env.ROOM_NOTIFY_URL, {
+      method: "POST",
+      body: JSON.stringify({ ...roomInfo, kind, ...extra }),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }).catch(() => {});
+  }
+}
+
 class Room {
   public static readonly CORE_VERSION = CORE_VERSION;
   private game: InternalGame | null = null;
@@ -485,7 +501,11 @@ class Room {
     player1.setTimeoutConfig(this.config);
     const state = InternalGame.createInitialState({
       decks: [player0.playerInfo.deck, player1.playerInfo.deck],
-      data: registry.resolve(resolveManuallySelectedOfficialVersion(moyuS7Versions as Record<number, Version>)),
+      data: registry.resolve(
+        resolveManuallySelectedOfficialVersion(
+          moyuS7Versions as Record<number, Version>,
+        ),
+      ),
     });
     const game = new InternalGame(state);
     game.onPause = async (state, mutations, canResume) => {
@@ -733,6 +753,7 @@ export class RoomsService {
       },
       5 * 60 * 1000,
     );
+    notifyRoom(room.getRoomInfo(), "create");
     return room.getRoomInfo();
   }
 
@@ -828,14 +849,19 @@ export class RoomsService {
       ) as number[];
       const winnerWho = game.state.winner;
       const winnerId = winnerWho === null ? null : playerIds[winnerWho]!;
-      this.games.addGame({
-        coreVersion: Room.CORE_VERSION,
-        gameVersion: CURRENT_VERSION,
-        data: JSON.stringify(room.getStateLog()),
-        winnerId,
-        playerIds,
-      });
+      this.games
+        .addGame({
+          coreVersion: Room.CORE_VERSION,
+          gameVersion: CURRENT_VERSION,
+          data: JSON.stringify(room.getStateLog()),
+          winnerId,
+          playerIds,
+        })
+        .then((game) => {
+          notifyRoom(room.getRoomInfo(), "stop", { winnerId, gameId: game.id });
+        });
     });
+    notifyRoom(room.getRoomInfo(), "start");
     room.start();
   }
 
@@ -898,7 +924,11 @@ export class RoomsService {
     if (!playerUserIds.includes(watchingPlayerId)) {
       throw new NotFoundException(`Player ${watchingPlayerId} not in room`);
     }
-    if (!room.config.watchable && visitorPlayerId !== 0 && visitorPlayerId !== watchingPlayerId) {
+    if (
+      !room.config.watchable &&
+      visitorPlayerId !== 0 &&
+      visitorPlayerId !== watchingPlayerId
+    ) {
       throw new UnauthorizedException(
         `Room ${roomId} cannot be watched by other`,
       );
