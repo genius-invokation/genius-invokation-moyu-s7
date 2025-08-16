@@ -37,10 +37,24 @@ export function UserInfo(props: UserInfoProps) {
         </div>
         <span class="text-gray">
           您可以在{" "}
-          <a href="https://www.gravatar.com" target="_blank" rel="noopener" class="text-blue-400">
+          <a
+            href="https://www.gravatar.com"
+            target="_blank"
+            rel="noopener"
+            class="text-blue-400"
+          >
             gravatar.com
-          </a>{" "}
-          根据您的邮箱来设置头像。
+          </a>
+          （国际站）或{" "}
+          <a
+            href="https://cn.cravatar.com"
+            target="_blank"
+            rel="noopener"
+            class="text-blue-400"
+          >
+            cravatar.com
+          </a>
+          （国内站） 根据您的邮箱来设置头像。
         </span>
       </div>
       <div class="flex-grow flex flex-col items-start">

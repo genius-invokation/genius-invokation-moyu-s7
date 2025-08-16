@@ -56,7 +56,7 @@ export class UsersService {
       return null;
     }
     const sha = hash("sha256", user.email, "hex");
-    const avatarUrl = `https://www.gravatar.com/avatar/${sha}?s=200&d=identicon`;
+    const avatarUrl = `https://cn.cravatar.com/avatar/${sha}?s=200&d=identicon`;
     return {
       id: user.id,
       login: user.name,
@@ -73,7 +73,7 @@ export class UsersService {
       return null;
     }
     const sha = hash("sha256", user.email, "hex");
-    const avatarUrl = `https://www.gravatar.com/avatar/${sha}?s=200&d=identicon`;
+    const avatarUrl = `https://cn.cravatar.com/avatar/${sha}?s=200&d=identicon`;
     return {
       id: user.id,
       login: user.name,
